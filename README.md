@@ -19,12 +19,11 @@ Seccion: 1900
 20121003387-David Alexander Cardenas Almendares
 
 
-
-     *Proyecto a desarrollar*
+**Proyecto a desarrollar**
   
 
 El ejercicio consiste en un proyecto que describe el problema de una empresa 
-dedicada a la prestación de servicios educativos con unos cuantos requerimientos 
+dedicada a la prestación de servicios educativos con los siguientes requerimientos 
 de este archivo:  
 [Empresa Aprendamos](https://github.com/AlxZeroX/POO-1900/blob/master/Docs/Proyecto%20de%20POO.pdf)
 
