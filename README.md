@@ -17,3 +17,9 @@ Seccion: 1900
 20151003958-Fredy Enrique Amador Quiroz
 
 20121003387-David Alexander Cardenas Almendares
+
+
+
+```
+EL siguiente proyecto consistira en unos cuantos cometidos de este archivo:
+```
