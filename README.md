@@ -1,4 +1,4 @@
-->PROYECTO APRENDAMOS<-
+PROYECTO APRENDAMOS
 ===================
 
 CLASE: IS-410 (Programacion Orientada a Objetos) 
