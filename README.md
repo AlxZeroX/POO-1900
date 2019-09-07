@@ -23,14 +23,12 @@ Seccion: 1900
 
 
 
-
+1. Proyecto a desarrollar
 
 ```
 
 
-
-
-EL siguiente proyecto consistira en unos cuantos requerimientos de este archivo:
+El ejercicio consiste en un proyecto que describe el problema de una empresa dedicada a la prestación de servicios educativos con unos cuantos requerimientos de este archivo:
 
 
 
