@@ -7,7 +7,7 @@ CLASE: IS-410 (Programacion Orientada a Objetos)
 Seccion: 1900
 -------------
 
-#INTEGRANTES:
+*INTEGRANTES:*
 
 
 20131015700-Cristian Alexander Martinez Ochoa
