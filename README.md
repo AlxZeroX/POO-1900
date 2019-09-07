@@ -1,3 +1,4 @@
+<center> 
 PROYECTO APRENDAMOS
 ===================
 
@@ -16,4 +17,4 @@ Seccion: 1900
 
 20151003958-Fredy Enrique Amador Quiroz
 
-<center>20121003387-David Alexander Cardenas Almendares</center>
+20121003387-David Alexander Cardenas Almendares </center>
