@@ -20,6 +20,10 @@ Seccion: 1900
 
 
 
+
+
+
+EL siguiente proyecto consistira en unos cuantos requerimientos de este archivo:
 ```
-EL siguiente proyecto consistira en unos cuantos cometidos de este archivo:
+[Empresa Aprendamos](https://github.com/AlxZeroX/POO-1900/blob/master/Docs/Proyecto%20de%20POO.pdf)
 ```
