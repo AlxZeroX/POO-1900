@@ -1,5 +1,13 @@
-# PROYECTO POO-1900
-## INTEGRANTES:
+PROYECTO APRENDAMOS
+===================
+
+CLASE: IS-410 (Programacion Orientada a Objetos) 
+------------------------------------------------
+
+Seccion: 1900
+-------------
+
+#INTEGRANTES:
 
 
 20131015700-Cristian Alexander Martinez Ochoa
