@@ -24,7 +24,8 @@ Seccion: 1900
 
 
 
-Proyecto a desarrollar
+*Proyecto a desarrollar*
+[Empresa Aprendamos](https://github.com/AlxZeroX/POO-1900/blob/master/Docs/Proyecto%20de%20POO.pdf)
 
 ```
 El ejercicio consiste en un proyecto que describe el problema de una empresa 
@@ -32,5 +33,4 @@ dedicada a la prestación de servicios educativos con unos cuantos requerimiento
 de este archivo:
 
 ```
-[Empresa Aprendamos](https://github.com/AlxZeroX/POO-1900/blob/master/Docs/Proyecto%20de%20POO.pdf)
 
