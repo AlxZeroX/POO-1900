@@ -2,7 +2,7 @@
 Casos de Uso:
 
 1. Creación de Cuenta Nuevo Alumno
-Actores: Nuevo Alumno
+Actores: Alumno
 Condiciones: Correo electrónico y una forma de pago válida
 Descripción: La persona ingresa en la dirección web de aprendamos, da clic en "Iniciar Curso", el sistema le pide que ingrese sus datos personales, que elija el tipo de curso, el horario de impartición y los datos para el pago, se manda confirmación del correo, la persona confirma el correo y se crea exitosamente la nueva cuenta.
 
