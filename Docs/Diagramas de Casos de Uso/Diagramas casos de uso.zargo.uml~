@@ -62,7 +62,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Sat Sep 07 20:21:26 CST 2019'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Sat Sep 07 20:34:50 CST 2019'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -5702,7 +5702,7 @@
     </group>
   </group>
   <group name="Fig68"
-       description="org.argouml.uml.diagram.use_case.ui.FigUseCase[864, 648, 130, 46]pathVisible=false;stereotypeView=0;extensionPointVisible=false"
+       description="org.argouml.uml.diagram.use_case.ui.FigUseCase[856, 648, 130, 46]pathVisible=false;stereotypeView=0;extensionPointVisible=false"
        href="-64--88-1-26--31627914:16d0e6dccdf:-8000:0000000000000BF9"
        fill="1"
        fillcolor="white"
@@ -5713,7 +5713,7 @@
     </private>
     
     <ellipse name="Fig68.0"
-      x="929"
+      x="921"
       y="671"
       rx="65"
       ry="23"
@@ -5723,7 +5723,7 @@
       strokecolor="black"
     />
     <text name="Fig68.1"
-      x="875"
+      x="867"
       y="659"
       width="107"
       height="23"
@@ -5739,7 +5739,7 @@
       justification="Center"
     >Nombre del curso</text>
     <group name="Fig68.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[875, 657, 87, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[867, 657, 87, 0]"
          href="-64--88-1-26--31627914:16d0e6dccdf:-8000:0000000000000BF9"
          fill="0"
          fillcolor="white"
@@ -5751,7 +5751,7 @@
       </private>
       
       <rectangle name="Fig68.2.0"
-        x="875"
+        x="867"
         y="657"
         width="87"
         height="0"
@@ -5762,7 +5762,7 @@
       />
     </group>
     <rectangle name="Fig68.3"
-      x="874"
+      x="866"
       y="658"
       width="11"
       height="1"
@@ -5773,7 +5773,7 @@
       visibility="0"
     />
     <group name="Fig68.4"
-         description="org.argouml.uml.diagram.ui.FigExtensionPointsCompartment[874, 658, 64, 19]"
+         description="org.argouml.uml.diagram.ui.FigExtensionPointsCompartment[866, 658, 64, 19]"
          href="-64--88-1-26--31627914:16d0e6dccdf:-8000:0000000000000BF9"
          fill="1"
          fillcolor="white"
@@ -5785,7 +5785,7 @@
       </private>
       
       <rectangle name="Fig68.4.0"
-        x="874"
+        x="866"
         y="658"
         width="64"
         height="19"
@@ -6080,7 +6080,7 @@
               y="733" />
       <lineto x="1080"
               y="728" />
-      <lineto x="973"
+      <lineto x="966"
               y="687" />
     </path>
   </group>
