@@ -3,7 +3,7 @@ Casos de Uso:
 
 1. Creación de Cuenta Nuevo Alumno
 Actores: Alumno
-Condiciones: Correo electrónico y una forma de pago válida
+Condiciones: Correo electrónico,datos personales,detalles sobre el o los cursos que va a recibir y una forma de pago válida
 Descripción: La persona ingresa en la dirección web de aprendamos, da clic en "Iniciar Curso", el sistema le pide que ingrese sus datos personales, que elija el tipo de curso, el horario de impartición y los datos para el pago, se manda confirmación del correo, la persona confirma el correo y se crea exitosamente la nueva cuenta.
 
 
@@ -13,7 +13,7 @@ Condiciones: usuario, que no choquen sus horas de trabajo (o con otro instructo)
 Descripcion: El instructor tendra a cargo su cantidad de alumnos con los cuales dara su clase encomendada y el espacio fisico.
 
 3. Gestion de los certificados 
-Actores: Alumno,instructor
+Actores: Alumno,sistema
 Condiciones: codigo del alumno (este es unico para cada alumno)
 Descripcion: utilizando el codigo del alumno se tendra acceso a los cursos que este haya cursado y con una simple consulta 
 se mostrara el certificado sin necesidad de realizar llamadas telefonicas simplemente accediendo a traves de la web.
