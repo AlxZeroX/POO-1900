@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="efa3220a-aca5-46ea-92b3-595b944bf758" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/aprendamos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aprendamos.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Cliente.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Instructor.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Usuario.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,7 +13,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -62,6 +64,7 @@
       <updated>1567197028241</updated>
       <workItem from="1567197036139" duration="5176000" />
       <workItem from="1567538633911" duration="1326000" />
+      <workItem from="1568093023777" duration="1350000" />
     </task>
     <servers />
   </component>
@@ -73,7 +76,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
