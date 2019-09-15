@@ -1,5 +1,5 @@
 <?php
-namespace aprendamosPHP;
+namespace usuarioPHP;
 class Usuario
 {
     /**
