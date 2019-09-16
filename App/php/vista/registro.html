@@ -11,9 +11,13 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <script src="../../js/jquery-3.4.1.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="../../css/estilos.css">
     <style>
+        .etiqueta-error{
+            color: #ce0808;
+        }
         .error {
             color: #ce0808;
             padding: 2px 0px 10px 0px;
@@ -22,7 +26,6 @@
             width: fit-content;
             display: none;
         }
-
         .exito {
             color: #06b81e;
             padding: 2px 0px 10px 0px;
@@ -31,11 +34,9 @@
             width: fit-content;
             display: none;
         }
-
         .input-error {
             border: 1px solid #ea4e4e;
         }
-
         table,
         th,
         td {
@@ -43,7 +44,7 @@
             background-color: floralwhite ;
             text-align: center;
         }
-        
+
         .bgimage {
             background-image: url("../../image/BackGround2.jpg");
             background-color: #cccccc;
@@ -53,76 +54,127 @@
             background-size: cover;
             position: relative;
         }
-
     </style>
 
 </head>
 
 <body class="bgimage">
-    <form>
-        <div class="container" id='login'>
-            <div class="panel panel-primary">
-                <div class="panel-heading text-center">
-                    <h2>REGISTRO</h2>
+<form>
+    <div class="container" id='login'>
+        <div class="panel panel-primary">
+            <div class="panel-heading text-center">
+                <h2>REGISTRO</h2>
+            </div>
+            <div class="panel-body">
+
+                <h4>Nombre: </h4>
+                <input id="nombre" type="text" class="form-control" placeholder="Nombre"><br>
+                <span id="error-nombre" class="etiqueta-error"></span>
+
+                <h4>Apellido: </h4>
+                <input class="form-control" id="apellido" type="text" placeholder="Apellido"><br>
+                <span id="error-apellido" class="etiqueta-error"></span>
+
+                <h4>Email: </h4>
+                <input  id="email" type="text" class="form-control" placeholder="Email" onkeyup="validarCorreo(this);">
+                <br><span id ="error-email" class="etiqueta-error"></span>
+
+                <h4>Usuario: </h4>
+                <input id="usuario" type="text" class="form-control" placeholder="Usuario"><br>
+                <span id ="error-nombreUsuario" class="etiqueta-error"></span>
+
+                <h4>Contraseña: </h4>
+                <input id="password" type="password" class="form-control" placeholder="Password" required><br>
+                <span id="error-password" class="etiqueta-error"></span>
+                <br><br>
+                <div class="panel-footer">
+                    <button class="btn btn-primary">Actualizar</button>
+                    <button type="button" class="btn btn-warning" id="button">Registrar</button>
                 </div>
-                <div class="panel-body">
-
-                    <h4>Nombre: </h4>
-                    <input value="Peter" id="nombre" type="text" class="form-control" placeholder="Nombre"><br>
-                    <div id="div-error-nombre" class="error">Ingrese el nombre</div>
-
-
-                    <h4>Apellido: </h4>
-                    <input class="form-control" value="Parker" id="apellido" type="text" placeholder="Apellido"><br>
-                    <div id="div-error-apellido" class="error">Ingrese el apellido</div>
-
-                    <h4>Email: </h4>
-                    <input value="Pparker@gmail.com" id="email" type="text" class="form-control" placeholder="Email" onkeyup="validarCorreo(this);">
-                    <div id="div-error-email" class="error">Ingrese el email</div>
-
-
-                    <h4>Usuario: </h4>
-                    <input value="Pparker" id="usuario" type="text" class="form-control" placeholder="Usuario"><br>
-                    <div id="div-error-usuario" class="error">Ingrese el usuario</div>
-
-
-                    <h4>Contraseña: </h4>
-                    <input value="parker.456" id="password" type="password" class="form-control" placeholder="Password">
-                    <div id="div-error-password" class="error">Ingrese el password</div>
-
-                    <div class="exito" id="div-exito">
-                        Registro realizado con éxito
-                    </div>
-                </div>
-    </form>
-
-
-
-    <div class="panel-footer">
-        <button class="btn btn-primary">Actualizar</button>
-        <button type="button" class="btn btn-warning" onclick="login();">Registrar</button>
+            </div>
+        </div>
     </div>
-    </div>
-    </div>
+</form>
+<script>
+    const expresionRegularNombre = /^[A-Z][a-z]+$/;
+    const expresionRegularApellido = /^[A-Z][a-z]+$/;
+    const expresionRegularEmail = /^(?!_)\w+\.{0,1}(?!_)\w+@[a-z]+[0-9]*\.[a-z]{2,}$/i;
 
-    <center>
-        <table>
-            <thead>
-                <tr>
-                    <th width=250px>Nombre</th>
-                    <th width=250px>Apellido</th>
-                    <th width=250px>Usuario</th>
-                    <th width=250px>Email</th>
-                    <th width=250px>Password</th>
-                    <th width=150px>Acción</th>
-                </tr>
-            </thead>
-            <tbody id="tabla-usuarios">
-            </tbody>
-        </table>
-    </center>
 
-    <script src="../../js/controlador.js"></script>
+    document.getElementById("button").onclick = function(){
+        var nombre = document.getElementById("nombre").value.toString().trim();
+        var apellido = document.getElementById("apellido").value.toString().trim();
+        var nombreUsuario = document.getElementById("usuario").value.toString().trim();
+        var email = document.getElementById("email").value.toString().trim();
+        var password = document.getElementById("password").value.toString().trim();
+        
+        if(nombre != "" && apellido !=""){
+            nombre = mayusculaInicioCadena(nombre);
+            apellido = mayusculaInicioCadena(apellido);
+        }
+        // Guardamos en un arreglo la coincidencia con la expresion regular.
+        var matchNombre = nombre.match(expresionRegularNombre);
+        var matchApellido = apellido.match(expresionRegularApellido);
+        var matchEmail = email.match(expresionRegularEmail);
+
+        if(matchNombre!=null &&
+            matchApellido != null &&
+            matchEmail != null &&
+            nombreUsuario != "" && password != ""
+        ){
+            verificarElementos();
+            $.ajax({
+                    url: '../controlador/controladorLogin.php',
+                    data: {
+                            nombre:nombre,
+                            apellido:apellido,
+                            email:email,
+                            nombreUsuario:nombreUsuario,
+                            password:password
+                            },
+                    type: 'POST',
+                    success: function (respuesta) {
+                        respuesta = respuesta.toString().trim();
+                        console.log(respuesta);
+                    }
+            });
+
+        }else{
+            verificarElementos();
+        }
+        
+        function mayusculaInicioCadena(cadena){
+            var caracter = cadena.substring(0,1);
+            caracter = caracter.toUpperCase();
+            cadena = cadena.replace(cadena.substring(0,1),caracter);
+            return cadena;
+        }
+        
+        function verificarElementos(){
+            if (matchNombre === null)
+                document.getElementById("error-nombre").innerText =" Nombre Incorrecto";
+            else
+                document.getElementById("error-nombre").innerText =" ";
+            if(matchApellido === null)
+                document.getElementById("error-apellido").innerText = "Apellido Incorrecto";
+            else
+                document.getElementById("error-apellido").innerText =" ";
+            if(matchEmail === null)
+                document.getElementById("error-email").innerText = "Email incorrecto";
+            else
+                document.getElementById("error-email").innerText =" ";
+            if (nombreUsuario === "")
+                document.getElementById("error-nombreUsuario").innerText = "nombre Usuario incorrecto";
+            else
+                document.getElementById("error-nombreUsuario").innerText =" ";
+            if(password === "")
+                document.getElementById("error-password").innerText = "contraseña incorrecta";
+            else
+                document.getElementById("error-password").innerText =" ";
+        }
+    }
+</script>
+<script src="../../js/controlador.js"></script>
 </body>
 
 </html>

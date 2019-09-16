@@ -2,35 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="efa3220a-aca5-46ea-92b3-595b944bf758" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/php/controlador/controladorAprendamos.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/controlador/controladorLogin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/controlador/controladorSignup.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/vista/aprendamos.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/vista/contactenos.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/vista/cursoOnline.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/vista/cursoPresencial.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/vista/cursoSemiPresencial.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/vista/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/vista/logout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/vista/signup.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Curso/Curso.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/usuario/Administrador.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/usuario/Cliente.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/usuario/Instructor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/aprendamos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aprendamos.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registro.html" beforeDir="false" afterPath="$PROJECT_DIR$/php/vista/registro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Administrador.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cliente.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Instructor.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/usuario/Usuario.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Docs/DiagramasDeClase/digramaDeClases.uml" beforeDir="false" afterPath="$PROJECT_DIR$/../Docs/DiagramasDeClase/digramaDeClases.uml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/controlador/controladorLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/controlador/controladorLogin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/vista/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/vista/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/vista/registro.html" beforeDir="false" afterPath="$PROJECT_DIR$/php/vista/registro.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -117,7 +92,9 @@
       <workItem from="1568421002263" duration="2571000" />
       <workItem from="1568488096544" duration="2292000" />
       <workItem from="1568505430193" duration="648000" />
-      <workItem from="1568506252865" duration="3616000" />
+      <workItem from="1568506252865" duration="3898000" />
+      <workItem from="1568515685563" duration="8554000" />
+      <workItem from="1568569127468" duration="14987000" />
     </task>
     <servers />
   </component>

@@ -22,7 +22,6 @@
             width: fit-content;
             display: none;
         }
-
         .exito {
             color: #06b81e;
             padding: 2px 0px 10px 0px;
@@ -31,11 +30,9 @@
             width: fit-content;
             display: none;
         }
-
         .input-error {
             border: 1px solid #ea4e4e;
         }
-
         table,
         th,
         td {
@@ -53,7 +50,6 @@
             background-size: cover;
             position: relative;
         }
-
     </style>
 
 </head>
@@ -94,6 +90,8 @@
                     Registro realizado con éxito
                 </div>
             </div>
+        </div>
+    </div>
 </form>
 
 
