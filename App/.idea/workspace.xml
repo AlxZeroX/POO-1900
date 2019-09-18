@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="efa3220a-aca5-46ea-92b3-595b944bf758" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/controlador/controladorLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/controlador/controladorLogin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/vista/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/vista/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/controlador/controladorSignup.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/controlador/controladorSignup.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/vista/registro.html" beforeDir="false" afterPath="$PROJECT_DIR$/php/vista/registro.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -95,6 +96,12 @@
       <workItem from="1568506252865" duration="3898000" />
       <workItem from="1568515685563" duration="8554000" />
       <workItem from="1568569127468" duration="14987000" />
+      <workItem from="1568597554537" duration="545000" />
+      <workItem from="1568782785219" duration="2454000" />
+      <workItem from="1568786746507" duration="2380000" />
+      <workItem from="1568789757804" duration="1235000" />
+      <workItem from="1568818262371" duration="2776000" />
+      <workItem from="1568824925512" duration="3534000" />
     </task>
     <servers />
   </component>

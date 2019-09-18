@@ -9,7 +9,10 @@
             "email": "feamador@unah.hn"
         }
     ],
-    "require": {},
+    "require": {
+      "ext-json": "*",
+      "ext-pgsql": "*"
+    },
     "autoload": {
         "psr-4": {
             "usuarioPHP\\": "src/usuario",
