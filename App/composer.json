@@ -9,10 +9,14 @@
             "email": "feamador@unah.hn"
         }
     ],
-    "require": {},
+    "require": {
+      "ext-json": "*",
+      "ext-pgsql": "*"
+    },
     "autoload": {
         "psr-4": {
-            "aprendamosPHP\\": "src/"
+            "usuarioPHP\\": "src/usuario",
+            "cursoPHP\\": "src/Curso"
         }
     }
 }

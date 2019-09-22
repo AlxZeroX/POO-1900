@@ -2,7 +2,8 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" packagePrefix="aprendamosPHP\" />
+      <sourceFolder url="file://$MODULE_DIR$/src/usuario" isTestSource="false" packagePrefix="usuarioPHP\" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Curso" isTestSource="false" packagePrefix="cursoPHP\" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
     </content>
     <orderEntry type="inheritedJdk" />

@@ -83,7 +83,7 @@ header {
 
 .banner {
 	position: relative;
-	background: url("../img/banner.jpeg");
+	background: url("image/BackGround.jpg");
 	background-position: center;
 	-webkit-background-size: cover;
 	background-size: cover;
@@ -99,8 +99,8 @@ header {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(to right, #000, #337ab7);
-	opacity: 900;
+	background: linear-gradient(to right, #1000, #337ab7);
+	opacity: 9;
 }
 
 .banner .bg-details {
