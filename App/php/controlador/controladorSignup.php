@@ -1,24 +1,31 @@
+
+<html>
+<head><title>Prueba</title></head>
+<body>
 <?php
+$host="localhost";
+$port="5432";
+$user="coba";
+$pass="root";
+$dbname="dbpersona";
 
-$nombre = $_POST['nombre'];
-$apellido = $_POST['apellido'];
-$email = $_POST['email'];
-$password = $_POST['password'];
-$nombreUsuario = $_POST['nombreUsuario'];
 
-// detalles de la conexion
-$conn_string = "host=http://127.0.0.1 port=39339 dbname=dbpersona user=coba password=toor";
 
-// establecemos una conexion con el servidor postgresSQL
-$dbconn = pg_connect($conn_string);
+$connect = pg_connect("host=$host port=$port user=$user pass=$pass dbname=$dbname");
 
-// Revisamos el estado de la conexion en caso de errores.
-if(!$dbconn) {
-    echo "Error: No se ha podido conectar a la base de datos\n";
-} else {
-    echo "Conexión exitosa\n";
-}
+if(!$connect)
+    echo "<p><i>No me conecte</i></p>";
+else
+    echo "<p><i>Me conecte</i></p>";
 
-// Close connection
-pg_close($dbconn);
+pg_close($connect);
+?>
+</body>
+</html>
 
+
+
+
+
+
+PD: en el pg_hba.conf  tengo los metodos de autenticacion como "trust"

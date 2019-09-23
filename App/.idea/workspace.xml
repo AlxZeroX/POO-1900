@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="efa3220a-aca5-46ea-92b3-595b944bf758" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/controlador/controladorLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/controlador/controladorLogin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/controlador/controladorSignup.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/controlador/controladorSignup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/vista/registro.html" beforeDir="false" afterPath="$PROJECT_DIR$/php/vista/registro.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +44,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/php/controlador" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -56,6 +54,9 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/php/controlador" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/php/vista" />
       <recent name="$PROJECT_DIR$/src/usuario" />
@@ -101,7 +102,9 @@
       <workItem from="1568786746507" duration="2380000" />
       <workItem from="1568789757804" duration="1235000" />
       <workItem from="1568818262371" duration="2776000" />
-      <workItem from="1568824925512" duration="3534000" />
+      <workItem from="1568824925512" duration="4144000" />
+      <workItem from="1568831973090" duration="1372000" />
+      <workItem from="1568834831485" duration="1427000" />
     </task>
     <servers />
   </component>
