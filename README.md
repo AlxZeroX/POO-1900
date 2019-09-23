@@ -23,7 +23,7 @@ Seccion: 1900
   
 
 El ejercicio consiste en un proyecto que describe el problema de una empresa 
-dedicada a la prestación de servicios educativos con los siguientes requerimientos 
-de este archivo:  
+dedicada a la prestación de servicios educativos con los requerimientos 
+presentados a continuacion:  
 [Empresa Aprendamos](https://github.com/AlxZeroX/POO-1900/blob/master/Docs/Proyecto%20de%20POO.pdf)
 
