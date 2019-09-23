@@ -66,7 +66,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Mon Sep 23 02:29:01 CST 2019'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Mon Sep 23 02:31:42 CST 2019'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -319,7 +319,7 @@
     </group>
   </group>
   <group name="Fig2"
-       description="org.argouml.sequence2.diagram.FigClassifierRole[568, 184, 150, 549]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.sequence2.diagram.FigClassifierRole[400, 184, 150, 549]pathVisible=false;stereotypeView=0;"
        href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:000000000000086B"
        fill="1"
        fillcolor="white"
@@ -330,7 +330,7 @@
     </private>
     
     <rectangle name="Fig2.0"
-      x="568"
+      x="400"
       y="184"
       width="150"
       height="549"
@@ -341,7 +341,7 @@
       visibility="0"
     />
     <rectangle name="Fig2.1"
-      x="568"
+      x="400"
       y="184"
       width="150"
       height="0"
@@ -351,7 +351,7 @@
       strokecolor="black"
     />
     <group name="Fig2.2"
-         description="org.argouml.sequence2.diagram.FigLifeLine[568, 233, 150, 499]"
+         description="org.argouml.sequence2.diagram.FigLifeLine[400, 233, 150, 499]"
          href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:000000000000086B"
          fill="1"
          fillcolor="white"
@@ -362,7 +362,7 @@
       </private>
       
       <rectangle name="Fig2.2.0"
-        x="568"
+        x="400"
         y="233"
         width="150"
         height="499"
@@ -378,13 +378,13 @@
         stroke="1"
         strokecolor="black"
       >
-        <moveto x="643"
+        <moveto x="475"
                 y="233" />
-        <lineto x="643"
+        <lineto x="475"
                 y="732" />
       </path>
       <group name="Fig2.2.2"
-           description="org.argouml.sequence2.diagram.FigActivation[633, 233, 20, 499]"
+           description="org.argouml.sequence2.diagram.FigActivation[465, 233, 20, 499]"
            href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:000000000000086B"
            fill="1"
            fillcolor="white"
@@ -395,7 +395,7 @@
         </private>
         
         <rectangle name="Fig2.2.2.0"
-          x="633"
+          x="465"
           y="233"
           width="20"
           height="499"
@@ -407,7 +407,7 @@
       </group>
     </group>
     <group name="Fig2.3"
-         description="org.argouml.sequence2.diagram.FigHead[568, 184, 150, 50]"
+         description="org.argouml.sequence2.diagram.FigHead[400, 184, 150, 50]"
          href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:000000000000086B"
          fill="1"
          fillcolor="white"
@@ -418,7 +418,7 @@
       </private>
       
       <rectangle name="Fig2.3.0"
-        x="568"
+        x="400"
         y="184"
         width="150"
         height="50"
@@ -428,7 +428,7 @@
         strokecolor="black"
       />
       <text name="Fig2.3.1"
-        x="568"
+        x="400"
         y="184"
         width="150"
         height="24"
@@ -444,7 +444,7 @@
         justification="Center"
       >/ALUMNO</text>
       <group name="Fig2.3.2"
-           description="org.argouml.uml.diagram.ui.FigStereotypesGroup[568, 184, 150, 0]"
+           description="org.argouml.uml.diagram.ui.FigStereotypesGroup[400, 184, 150, 0]"
            href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:000000000000086B"
            fill="0"
            fillcolor="white"
@@ -455,7 +455,7 @@
         </private>
         
         <rectangle name="Fig2.3.2.0"
-          x="568"
+          x="400"
           y="184"
           width="150"
           height="0"
@@ -468,7 +468,7 @@
     </group>
   </group>
   <group name="Fig3"
-       description="org.argouml.sequence2.diagram.FigClassifierRole[872, 184, 150, 549]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.sequence2.diagram.FigClassifierRole[632, 184, 150, 549]pathVisible=false;stereotypeView=0;"
        href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:000000000000086E"
        fill="1"
        fillcolor="white"
@@ -479,7 +479,7 @@
     </private>
     
     <rectangle name="Fig3.0"
-      x="872"
+      x="632"
       y="184"
       width="150"
       height="549"
@@ -490,7 +490,7 @@
       visibility="0"
     />
     <rectangle name="Fig3.1"
-      x="872"
+      x="632"
       y="184"
       width="150"
       height="0"
@@ -500,7 +500,7 @@
       strokecolor="black"
     />
     <group name="Fig3.2"
-         description="org.argouml.sequence2.diagram.FigLifeLine[872, 233, 150, 499]"
+         description="org.argouml.sequence2.diagram.FigLifeLine[632, 233, 150, 499]"
          href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:000000000000086E"
          fill="1"
          fillcolor="white"
@@ -511,7 +511,7 @@
       </private>
       
       <rectangle name="Fig3.2.0"
-        x="872"
+        x="632"
         y="233"
         width="150"
         height="499"
@@ -527,13 +527,13 @@
         stroke="1"
         strokecolor="black"
       >
-        <moveto x="947"
+        <moveto x="707"
                 y="233" />
-        <lineto x="947"
+        <lineto x="707"
                 y="732" />
       </path>
       <group name="Fig3.2.2"
-           description="org.argouml.sequence2.diagram.FigActivation[937, 233, 20, 499]"
+           description="org.argouml.sequence2.diagram.FigActivation[697, 233, 20, 499]"
            href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:000000000000086E"
            fill="1"
            fillcolor="white"
@@ -544,7 +544,7 @@
         </private>
         
         <rectangle name="Fig3.2.2.0"
-          x="937"
+          x="697"
           y="233"
           width="20"
           height="499"
@@ -556,7 +556,7 @@
       </group>
     </group>
     <group name="Fig3.3"
-         description="org.argouml.sequence2.diagram.FigHead[872, 184, 150, 50]"
+         description="org.argouml.sequence2.diagram.FigHead[632, 184, 150, 50]"
          href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:000000000000086E"
          fill="1"
          fillcolor="white"
@@ -567,7 +567,7 @@
       </private>
       
       <rectangle name="Fig3.3.0"
-        x="872"
+        x="632"
         y="184"
         width="150"
         height="50"
@@ -577,7 +577,7 @@
         strokecolor="black"
       />
       <text name="Fig3.3.1"
-        x="872"
+        x="632"
         y="184"
         width="150"
         height="24"
@@ -593,7 +593,7 @@
         justification="Center"
       >/INSTRUCTOR</text>
       <group name="Fig3.3.2"
-           description="org.argouml.uml.diagram.ui.FigStereotypesGroup[872, 184, 150, 0]"
+           description="org.argouml.uml.diagram.ui.FigStereotypesGroup[632, 184, 150, 0]"
            href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:000000000000086E"
            fill="0"
            fillcolor="white"
@@ -604,7 +604,7 @@
         </private>
         
         <rectangle name="Fig3.3.2.0"
-          x="872"
+          x="632"
           y="184"
           width="150"
           height="0"
@@ -617,7 +617,7 @@
     </group>
   </group>
   <group name="Fig4"
-       description="org.argouml.sequence2.diagram.FigClassifierRole[1192, 184, 150, 549]pathVisible=false;stereotypeView=0;"
+       description="org.argouml.sequence2.diagram.FigClassifierRole[880, 184, 150, 549]pathVisible=false;stereotypeView=0;"
        href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:0000000000000871"
        fill="1"
        fillcolor="white"
@@ -628,7 +628,7 @@
     </private>
     
     <rectangle name="Fig4.0"
-      x="1192"
+      x="880"
       y="184"
       width="150"
       height="549"
@@ -639,7 +639,7 @@
       visibility="0"
     />
     <rectangle name="Fig4.1"
-      x="1192"
+      x="880"
       y="184"
       width="150"
       height="0"
@@ -649,7 +649,7 @@
       strokecolor="black"
     />
     <group name="Fig4.2"
-         description="org.argouml.sequence2.diagram.FigLifeLine[1192, 233, 150, 499]"
+         description="org.argouml.sequence2.diagram.FigLifeLine[880, 233, 150, 499]"
          href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:0000000000000871"
          fill="1"
          fillcolor="white"
@@ -660,7 +660,7 @@
       </private>
       
       <rectangle name="Fig4.2.0"
-        x="1192"
+        x="880"
         y="233"
         width="150"
         height="499"
@@ -676,13 +676,13 @@
         stroke="1"
         strokecolor="black"
       >
-        <moveto x="1267"
+        <moveto x="955"
                 y="233" />
-        <lineto x="1267"
+        <lineto x="955"
                 y="732" />
       </path>
       <group name="Fig4.2.2"
-           description="org.argouml.sequence2.diagram.FigActivation[1257, 233, 20, 499]"
+           description="org.argouml.sequence2.diagram.FigActivation[945, 233, 20, 499]"
            href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:0000000000000871"
            fill="1"
            fillcolor="white"
@@ -693,7 +693,7 @@
         </private>
         
         <rectangle name="Fig4.2.2.0"
-          x="1257"
+          x="945"
           y="233"
           width="20"
           height="499"
@@ -705,7 +705,7 @@
       </group>
     </group>
     <group name="Fig4.3"
-         description="org.argouml.sequence2.diagram.FigHead[1192, 184, 150, 50]"
+         description="org.argouml.sequence2.diagram.FigHead[880, 184, 150, 50]"
          href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:0000000000000871"
          fill="1"
          fillcolor="white"
@@ -716,7 +716,7 @@
       </private>
       
       <rectangle name="Fig4.3.0"
-        x="1192"
+        x="880"
         y="184"
         width="150"
         height="50"
@@ -726,7 +726,7 @@
         strokecolor="black"
       />
       <text name="Fig4.3.1"
-        x="1192"
+        x="880"
         y="184"
         width="150"
         height="24"
@@ -742,7 +742,7 @@
         justification="Center"
       >/CURSO</text>
       <group name="Fig4.3.2"
-           description="org.argouml.uml.diagram.ui.FigStereotypesGroup[1192, 184, 150, 0]"
+           description="org.argouml.uml.diagram.ui.FigStereotypesGroup[880, 184, 150, 0]"
            href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:0000000000000871"
            fill="0"
            fillcolor="white"
@@ -753,7 +753,7 @@
         </private>
         
         <rectangle name="Fig4.3.2.0"
-          x="1192"
+          x="880"
           y="184"
           width="150"
           height="0"
