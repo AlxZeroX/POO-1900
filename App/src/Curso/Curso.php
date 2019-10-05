@@ -3,7 +3,8 @@ class Curso{
     protected $nombreCurso;
     protected $listaInstructores=array();
     protected $listaAlumnos = array();
-    protected function __construct($nombreCurso)
+
+    public function __construct($nombreCurso)
     {
         $this->nombreCurso = $nombreCurso;
     }

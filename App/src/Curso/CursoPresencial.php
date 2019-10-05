@@ -11,7 +11,7 @@ class CursoPresencial extends \Curso
 
     function __construct($nombre, $planificaion, $lugar)
     {
-        parent::construct($nombre);
+        parent::__construct($nombre);
         $this->planificaion = $planificaion;
         $this->lugar = $lugar;
     }

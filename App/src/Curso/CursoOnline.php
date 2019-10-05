@@ -10,7 +10,7 @@ class CursoOnline extends \Curso
 
     public function __construct($nombreCurso)
     {
-        parent::construct($nombreCurso);
+        parent::__construct($nombreCurso);
         $this->videoClases = array();
     }
 
