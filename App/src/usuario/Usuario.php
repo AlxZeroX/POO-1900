@@ -5,11 +5,11 @@ class Usuario
     /**
      * @var string
      */
-    private $nombre;
-    private $apellido;
-    private $contrasena;
-    private $email;
-    private $edad;
+    protected $nombre;
+    protected $apellido;
+    protected $contrasena;
+    protected $email;
+    protected $edad;
 
     public function __construct($nombre, $apellido, $edad, $correoElectronico,$contrasena)
     {

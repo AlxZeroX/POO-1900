@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="efa3220a-aca5-46ea-92b3-595b944bf758" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Curso/CalendarioAcademico.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Curso/CursoOnline.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Curso/CursoPresencial.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Curso/CursoSemiPresencial.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/usuario/Cliente.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/usuario/Alumno.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Curso/Curso.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Curso/Curso.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/usuario/Alumno.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/usuario/Alumno.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/usuario/Instructor.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/usuario/Instructor.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/usuario/Usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/usuario/Usuario.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -105,7 +111,8 @@
       <workItem from="1568824925512" duration="4144000" />
       <workItem from="1568831973090" duration="1372000" />
       <workItem from="1568834831485" duration="1427000" />
-      <workItem from="1570235618924" duration="3497000" />
+      <workItem from="1570235618924" duration="8650000" />
+      <workItem from="1570248016270" duration="1664000" />
     </task>
     <servers />
   </component>
