@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="efa3220a-aca5-46ea-92b3-595b944bf758" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/controlador/controladorLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/controlador/controladorLogin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/controlador/controladorSignup.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/controlador/controladorSignup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/usuario/Cliente.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/usuario/Alumno.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/usuario/Usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/usuario/Usuario.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,6 +105,7 @@
       <workItem from="1568824925512" duration="4144000" />
       <workItem from="1568831973090" duration="1372000" />
       <workItem from="1568834831485" duration="1427000" />
+      <workItem from="1570235618924" duration="3497000" />
     </task>
     <servers />
   </component>
