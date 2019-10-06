@@ -62,7 +62,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Tue Oct 01 21:57:47 CST 2019'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Tue Oct 01 21:58:45 CST 2019'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -74,7 +74,7 @@
       isAbstract = 'false'>
       <UML:Namespace.ownedElement>
         <UML:Actor xmi.id = '-64--88-1-26-3a169457:16d05629bbb:-8000:0000000000000866'
-          name = 'Alumno' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+          name = 'Usuario' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
           isAbstract = 'false'/>
         <UML:Actor xmi.id = '-64--88-1-26-3a169457:16d05629bbb:-8000:0000000000000867'
           name = 'Instructor' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
@@ -1763,9 +1763,9 @@
       strokecolor="black"
     />
     <text name="Fig2.1"
-      x="51"
+      x="50"
       y="399"
-      width="54"
+      width="56"
       height="23"
       fill="0"
       fillcolor="white"
@@ -1777,7 +1777,7 @@
       bold="false"
       textsize="12"
       justification="Center"
-    >Alumno</text>
+    >Usuario</text>
     <ellipse name="Fig2.2"
       x="78"
       y="361"
