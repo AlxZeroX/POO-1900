@@ -103,7 +103,7 @@ class CursoModel extends DBAbstractModel{
 
 		$this->query = "
 		UPDATE cursos
-		SET descripcion='$descripcion',
+		SET nombre='$nombre',
         SET duracion='$duracion'
 		WHERE id = '$id'
 		";
