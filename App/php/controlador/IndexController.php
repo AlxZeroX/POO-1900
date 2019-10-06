@@ -24,16 +24,16 @@ class IndexController
               <a class="nav-link" href="?c=Curso&a=list">Cursos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="?c=TipoMascota&a=list">Instructores</a>
+              <a class="nav-link" href="?c=Instructor&a=list">Instructores</a>
             </li>
           </ul>
 
           <ul class="nav nav-pills flex-column">
             <li class="nav-item">
-              <a class="nav-link" href="?c=Accesorio&a=list">Calificaciones</a>
+              <a class="nav-link" href="?c=Calificaciones&a=list">Calificaciones</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="?c=Categoria&a=list">Imprimir</a>
+              <a class="nav-link" href="?c=Imprimir&a=list">Imprimir</a>
             </li>
           </ul>
 
