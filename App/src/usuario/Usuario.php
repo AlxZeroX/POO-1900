@@ -5,16 +5,19 @@ class Usuario
     /**
      * @var string
      */
-    private $nombre;
-    private $apellido;
-    private $contrasena;
-    private $correoElectronico;
-    private $edad;
+    protected $nombre;
+    protected $apellido;
+    protected $contrasena;
+    protected $email;
+    protected $edad;
 
-    public function __construct($correoElectronico,$contrasena)
+    public function __construct($nombre, $apellido, $edad, $correoElectronico,$contrasena)
     {
-            $this->correoElectronico = $correoElectronico;
+            $this->email = $correoElectronico;
             $this->contrasena = password_hash($contrasena,PASSWORD_DEFAULT);
+            $this->nombre = $nombre;
+            $this->apellido = $apellido;
+            $this->edad = $edad;
     }
     public function setNombre($nombre)
     {
@@ -39,10 +42,13 @@ class Usuario
     public function setContrasena($contrasena){
         $this->contrasena = $contrasena;
     }
-    public function setCorreoElectronico($correoElectronico){
-        $this->correoElectronico = $correoElectronico;
+    public function setEmail($email){
+        $this->email = $email;
     }
-    public function getCorreoElectronico(){
-        return$this->correoElectronico;
+    public function getEmail(){
+        return$this->email;
+    }
+    public function getContrasena(){
+        return $this->contrasena;
     }
 }
