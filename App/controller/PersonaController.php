@@ -1,7 +1,7 @@
 <?php 
 require_once('model/PersonaModel.php');
 require_once('model/CursoModel.php');
-require_once('model/SucursalModel.php');
+require_once('model/AreaModel.php');
 require_once('model/TipoRolModel.php');
 
 class PersonaController{
@@ -21,7 +21,7 @@ class PersonaController{
     <th>Password</th>
     <th>Username</th>
     <th>Curso</th>
-    <th>Instructor</th>
+    <th>Edificio-Aula</th>
     <th>Tipo Usuario</th>
     <th>Accion</th>
     </tr></thead><tbody>";
@@ -41,10 +41,10 @@ class PersonaController{
             $tm->get($persona->tiporol_id);
             $aux .= "\t\t<td>". $tm->nombre . "</td>\n";
           break;
-          case 'sucursal_id':
-            $sucursal = new SucursalModel();
-            $sucursal->get($persona->sucursal_id);
-            $aux .= "\t\t<td>". $sucursal->nombre . "</td>\n";
+          case 'area_id':
+            $area = new AreaModel();
+            $area->get($persona->area_id);
+            $aux .= "\t\t<td>". $area->edificio  . "-" . $area->aula . "</td>\n";
           break;
           default:
             $aux .= "\t\t<td>". $persona->$campo . "</td>\n";
@@ -114,23 +114,23 @@ class PersonaController{
     $auxtm .= '</select></div></div>';
 
 
-    $sucursal = new SucursalModel();
+    $area = new AreaModel();
 
     $auxsu = '';
-    $rows = $sucursal->getList();
+    $rows = $area->getList();
     $auxsu .= '<div class="form-group">
-          <label class="control-label col-sm-2" for="sel1">Sucursal:</label>
+          <label class="control-label col-sm-2" for="sel1">Edificio:</label>
           <div class="col-sm-10">
-            <select class="form-control" name="sucursal_id">';
+            <select class="form-control" name="area_id">';
             
     for($i=0;$i<count($rows);$i++){
       foreach($rows[$i] as $campo=>$valor) {
-        $sucursal->$campo = $valor;
+        $area->$campo = $valor;
         if($campo == 'id'){
-          $auxsu .= '<option value="' . $sucursal->$campo . '">';
+          $auxsu .= '<option value="' . $area->$campo . '">';
         }
-        if($campo == 'nombre'){
-          $auxsu .= $sucursal->$campo . '</option>';
+        if($campo == 'edificio'){
+          $auxsu .= $area->$campo . '</option>';
         }
 
       }
@@ -231,7 +231,7 @@ class PersonaController{
           </div>
         </div>        
 
-        ' . $aux . $auxtm . $auxsu . '
+        ' . $aux . $auxsu . $auxtm . '
 
         <div class="form-group">
           <div class="col-sm-10 col-sm-offset-2">
@@ -309,28 +309,28 @@ class PersonaController{
     $auxtm .= '</select></div></div>';
 
 
-    $sucursal = new SucursalModel();
+    $area = new AreaModel();
 
     $auxsu = '';
-    $rows = $sucursal->getList();
+    $rows = $area->getList();
     $auxsu .= '<div class="form-group">
-          <label class="control-label col-sm-2" for="sel1">Sucursal:</label>
+          <label class="control-label col-sm-2" for="sel1">Edificio:</label>
           <div class="col-sm-10">
-            <select class="form-control" name="sucursal_id">';
+            <select class="form-control" name="area_id">';
             
     for($i=0;$i<count($rows);$i++){
       foreach($rows[$i] as $campo=>$valor) {
-        $sucursal->$campo = $valor;
+        $area->$campo = $valor;
         if($campo == 'id'){
-          if($sucursal->$campo == $persona->sucursal_id){
-             $auxsu .= '<option value="' . $sucursal->$campo . '" selected >';
+          if($area->$campo == $persona->area_id){
+             $auxsu .= '<option value="' . $area->$campo . '" selected >';
           }
           else{
-            $auxsu .= '<option value="' . $sucursal->$campo . '">';
+            $auxsu .= '<option value="' . $area->$campo . '">';
           }
         }
-        if($campo == 'nombre'){
-          $auxsu .= $sucursal->$campo . '</option>';
+        if($campo == 'edificio'){
+          $auxsu .= $area->$campo . '</option>';
         }
 
       }
@@ -430,7 +430,7 @@ class PersonaController{
           </div>
         </div>
 
-        ' . $auxr . $auxtm . $auxsu . '
+        ' . $auxr . $auxsu . $auxtm . '
 
         <div class="form-group">
           <div class="col-sm-10 col-sm-offset-2">
@@ -483,7 +483,7 @@ class PersonaController{
 
           <ul class="nav nav-pills flex-column">
             <li class="nav-item">
-              <a class="nav-link" href="?c=Mascota&a=list">Mascota <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="?c=Mascota&a=list">Prueba <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="?c=Persona&a=list">Personas (Registro) <span class="sr-only">(current)</span></a>
@@ -494,6 +494,11 @@ class PersonaController{
             </li>
             <li class="nav-item">
               <a class="nav-link" href="?c=Instructor&a=list">Instructores</a>
+            </li>
+          </ul>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="?c=Area&a=list">Asignar area a los cursos</a>
             </li>
           </ul>
 

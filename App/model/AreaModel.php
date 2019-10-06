@@ -1,27 +1,17 @@
-<?php
+<?php 
 # Importar modelo de abstracción de base de datos
 require_once('config/DBAbstractModel.php');
-class PersonaModel extends DBAbstractModel {
+class AreaModel extends DBAbstractModel{
+	public $edificio;
+    public $aula;
+	public $id;
 
-	public $nombre;
-	public $apellido;
-	public $edad;
-	public $pais;
-    public $correo;
-    public $password;
-    public $username;
-    public $curso_id;
-    public $tiporol_id;
-	public $area_id;
-    public $id;
-
-
-	# Traer datos de una Persona
+	# Traer datos deL Area
 	public function get($iid=''){
 		if($iid != '') {
 			$this->query = "
 			SELECT *
-			FROM persona
+			FROM area
 			WHERE id = '$iid'
 			";
 			$this->getResultQuery();
@@ -33,23 +23,22 @@ class PersonaModel extends DBAbstractModel {
 
 			$this->msj = '<div class="alert alert-success alert-dismissable">
 							<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-  							<strong>Realizado!</strong> Persona encontrada.
+  							<strong>Realizado!</strong> area encontrada.
 						  </div>';
 
 		}
 		else{
 			$this->msj = '<div class="alert alert-danger alert-dismissable">
 			<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-  <strong>A ocurrido un error!</strong> no se encuentra la Persona.
+  <strong>A ocurrido un error!</strong> no se encuentra el area.
 </div>';
 		}
 	}
-    
 	# Traer Lista
 	public function getList(){
 		$this->query = "
 		SELECT *
-		FROM persona
+		FROM area
 		ORDER BY id ASC";
 
 		$this->getResultQuery();
@@ -57,14 +46,15 @@ class PersonaModel extends DBAbstractModel {
 		$aux = "";
 		if(count($this->rows) >= 1){
 			$this->msj = '<div class="alert alert-success alert-dismissable">
-    <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
-  <strong>Realizado!</strong> Persona(s) encontrada(s).
-</div>';
+							<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  							<strong>Realizado!</strong> Area encontrada.
+						  </div>';
 			return $this->rows;
 		}
 		else{
-			$this->msj = '<div class="alert alert-danger">
-  <strong>A ocurrido un error!</strong> no existe ninguna columna de la tabla Persona.
+			$this->msj = '<div class="alert alert-danger alert-dismissable">
+			<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>A ocurrido un error!</strong> no se encuentra el area.
 </div>';
 		}
 		return array();
@@ -76,73 +66,62 @@ class PersonaModel extends DBAbstractModel {
 			if($data['id'] != $this->id) {
 				foreach ($data as $campo=>$valor) {
 					$$campo = $valor;
-				}    
+				}
 
 				$this->query = "
-				INSERT INTO persona
-				(id, nombre, apellido, edad, pais, correo, password, username, curso_id, tiporol_id, area_id)
+				INSERT INTO area
+				(id, edificio, aula)
 				VALUES
-				('$id', '$nombre', '$apellido', '$edad', '$pais', '$correo', '$password', '$username', '$curso_id', '$tiporol_id', '$area_id')
+				('$id', '$edificio', '$aula')
 				";
+
 				$this->msj = '<div class="alert alert-success alert-dismissable">
 							<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-  							<strong>Realizado!</strong> Persona agregada exitosamente.
+  							<strong>Realizado!</strong> Area agregada exitosamente.
 						  </div>';
 				$this->executeSQuery();
 			}
 			else{
 				$this->msj = '<div class="alert alert-warning">
-  <strong>Peligro!</strong> La Persona que desea agregar ya existe.
+  <strong>Peligro!</strong> El area que desea agregar ya existe.
 </div>';
 			}
 		}
 		else{
 			$this->msj = '<div class="alert alert-danger">
-  <strong>A ocurrido un error!</strong> no existe ninguna columna de la tabla Persona.
+  <strong>A ocurrido un error!</strong> no existe ninguna columna de la tabla Area.
 </div>';
 		}
 	}
-    
-    
-    
-	# Modificar una Persona
+	# Modificar el  Area
 	public function edit($data=array()) {
 		foreach ($data as $campo=>$valor) {
 			$$campo = $valor;
 		}
-        
-        
-		$this->query = "
-		UPDATE persona
-		SET nombre='$nombre', 
-        apellido='$apellido', 
-        edad='$edad', 
-        pais='$pais',	
-        correo='$correo', 
-        password='$password', 
-        username='$username', 
-        curso_id='$curso_id', 
-        tiporol_id='$tiporol_id', 
-        area_id='$area_id' 
-        WHERE id = '$id'
-		";
 
+
+		$this->query = "
+		UPDATE area
+		SET edificio='$edificio',
+        aula='$aula'
+		WHERE id = '$id'
+		";
 		$this->msj = '<div class="alert alert-success alert-dismissable">
 							<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-  							<strong>Realizado!</strong> Persona modificada exitosamente.
+  							<strong>Realizado!</strong> Area modificada exitosamente.
 						  </div>';
 		$this->executeSQuery();
 	}
-	# Eliminar una Persona
+	# Eliminar el  Area
 	public function delete($iid='') {
 		$this->query = "
-		DELETE FROM persona
+		DELETE FROM area
 		WHERE id = '$iid'
 		";
 
 		$this->msj = '<div class="alert alert-success alert-dismissable">
 							<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-  							<strong>Realizado!</strong> Persona eliminada exitosamente.
+  							<strong>Realizado!</strong> Area elimminada exitosamente.
 						  </div>';
 		$this->executeSQuery();
 	}
@@ -150,6 +129,5 @@ class PersonaModel extends DBAbstractModel {
 	function __construct() {
 		$this->db_name = 'Poo';
 	}
-
 }
 ?>
