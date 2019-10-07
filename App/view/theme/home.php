@@ -26,16 +26,27 @@
 
           <ul class="nav nav-pills flex-column">
             <li class="nav-item">
-              <a class="nav-link" href="#">Registrar</a>
+              <a class="nav-link" href="#">Prueba</a>
             </li>
           </ul>
 
           <ul class="nav nav-pills flex-column">
             <li class="nav-item">
+              <a class="nav-link" href="#">Personas (Registro)</a>
+            </li>
+            
+            <li class="nav-item">
               <a class="nav-link" href="#">Cursos</a>
             </li>
+          </ul>
+            
             <li class="nav-item">
               <a class="nav-link" href="#">Instructores</a>
+            </li>
+          </ul>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="#">Asignar area a los cursos</a>
             </li>
           </ul>
 
@@ -48,7 +59,7 @@
             </li>
           </ul>
         </nav>
-
+        
         <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
           <h1>Inicio</h1>
 

@@ -165,32 +165,31 @@ class AreaController{
               <a class="nav-link"  href="?c=Index&a=index">Inicio</a>
             </li>
           </ul>
-          
-
+              
           <ul class="nav nav-pills flex-column">
             <li class="nav-item">
-              <a class="nav-link" href="?c=Prueba&a=list">Prueba <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="?c=Prueba&a=list">Prueba<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="?c=Persona&a=list">Personas (Registro) <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="?c=Persona&a=list">Personas (Registro)</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="?c=Curso&a=list">Cursos</a>
             </li>
+          </ul>
+
+          <ul class="nav nav-pills flex-column">
             <li class="nav-item">
               <a class="nav-link" href="?c=Instructores&a=list">Instructores</a>
             </li>
-          </ul>
-          
             <li class="nav-item">
-              <a class="nav-link" href="?c=Area&a=list">Asignar area a los cursos</a>
+              <a class="nav-link active" href="?c=Area&a=list">Asignar area a los cursos</a>
             </li>
           </ul>
 
           <ul class="nav nav-pills flex-column">
             <li class="nav-item">
-              <a class="nav-link" href="?c=Calificaciones&a=list">Calificaciones</a>
+              <a class="nav-link" href="?c=Calificaciones&a=list">Boletas Calificaciones</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="?c=Imprimir&a=list">Imprimir</a>
@@ -198,8 +197,7 @@ class AreaController{
           </ul>
 
         </nav>
-       
-
+        
         <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
           <h1>Inicio > Area
           ';

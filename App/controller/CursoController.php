@@ -218,20 +218,20 @@ class CursoController{
 
           <ul class="nav nav-pills flex-column">
             <li class="nav-item">
-              <a class="nav-link" href="?c=Prueba&a=list">Prueba <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="?c=Prueba&a=list">Prueba<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="?c=Persona&a=list">Personas (Registro) <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="?c=Persona&a=list">Personas (Registro)</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="?c=Curso&a=list">Cursos</a>
+            </li>
+          </ul>
 
-            <li class="nav-item">
-              <a class="nav-link" href="?c=Curso&a=list">Cursos</a>
-            </li>
+          <ul class="nav nav-pills flex-column">
             <li class="nav-item">
               <a class="nav-link" href="?c=Instructores&a=list">Instructores</a>
             </li>
-          </ul>
-          
             <li class="nav-item">
               <a class="nav-link" href="?c=Area&a=list">Asignar area a los cursos</a>
             </li>
@@ -239,7 +239,7 @@ class CursoController{
 
           <ul class="nav nav-pills flex-column">
             <li class="nav-item">
-              <a class="nav-link" href="?c=Calificaciones&a=list">Calificaciones</a>
+              <a class="nav-link" href="?c=Calificaciones&a=list">Boletas Calificaciones</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="?c=Imprimir&a=list">Imprimir</a>

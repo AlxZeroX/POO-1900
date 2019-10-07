@@ -1,25 +1,31 @@
 <?php 
-require_once('config/FrontController.php');
 
-FrontController::main();
-/*
-	echo 'hello world';
-
-    $host="localhost";
-    $port="5432";
-    $user="postgres";
-    $pass="admin";
-    $dbname="Poo";
-
-    // Conectando y seleccionado la base de datos  
-    $connect = pg_connect("host=$host port=$port dbname=$dbname user=$user password=$pass")
-    or die('No se ha podido conectar: ' . pg_last_error());
-
-    if(!$connect)
-        echo "<p><i>No me conecte</i></p>";
-    else
-        echo "<p><i>Me conecte</i></p>";
-
-    pg_close($connect);
-    */
+	include_once('views/head.php');
+	include_once('views/navbar.php');
+?>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 well">
+				<form action="" name="f1" method="post">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+						<input type="text" id="usuario" class="form-control">
+					</div><br/>
+					<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+						<input type="password" id="contrasena" class="form-control">
+					</div><br/>
+					<div class="input-group">
+						<button type="button" class="btn btn-primary" id="Iniciar">Iniciar Sesión</button>
+						<a href="home.php?c=Persona&a=addform" class="btn btn-primary" role="button">REGISTRAR</a>
+					</div>
+				
+				</form>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="mensaje">
+				
+				</div>
+			</div>
+			
+<?php 
+	include_once('views/footer.php');
 ?>
