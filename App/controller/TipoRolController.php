@@ -140,17 +140,22 @@ class TipoRolController{
 
           <ul class="nav nav-pills flex-column">
             <li class="nav-item">
-              <a class="nav-link" href="?c=Mascota&a=list">Mascota <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="?c=Prueba&a=list">Prueba <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="?c=Persona&a=list">Personas (Registro) <span class="sr-only">(current)</span></a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="?c=Cursos&a=list">Cursos</a>
+              <a class="nav-link" href="?c=Curso&a=list">Cursos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="?c=Instructores&a=list">Instructores</a>
+            </li>
+          </ul>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="?c=Area&a=list">Asignar area a los cursos</a>
             </li>
           </ul>
 
