@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="efa3220a-aca5-46ea-92b3-595b944bf758" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/php/vista/vistaAdministrador.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Curso/Curso.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Curso/Curso.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Curso/CursoOnline.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Curso/CursoOnline.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Curso/CursoPresencial.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Curso/CursoPresencial.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/usuario/Administrador.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/usuario/Administrador.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/usuario/Instructor.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/usuario/Instructor.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +105,9 @@
       <workItem from="1568831973090" duration="1372000" />
       <workItem from="1568834831485" duration="1427000" />
       <workItem from="1570235618924" duration="8650000" />
-      <workItem from="1570248016270" duration="3902000" />
+      <workItem from="1570248016270" duration="5640000" />
+      <workItem from="1570254518036" duration="1973000" />
+      <workItem from="1570519394565" duration="383000" />
     </task>
     <servers />
   </component>

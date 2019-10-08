@@ -10,7 +10,18 @@ class CursoController{
 
     $aux = '';
 		$rows = $curso->getList();
-    $aux .= "</h1><h2>Curso</h2><a class=\"btn btn-success\" href=\"?c=Curso&a=addform\">Agregar</a><div class=\"table-responsive\"><table class=\"table table-striped\"><thead><tr><th>id</th><th>Nombre</th><th>Accion</th></tr></thead><tbody>";
+    $aux .= "</h1><h2>Curso</h2><a class=\"btn btn-success\" href=\"?c=Curso&a=addform\">Agregar</a><div class=\"table-responsive\"><table class=\"table table-striped\">
+    <thead>
+    <tr>
+    <th>Nombre</th>
+    <th>Instructor</th>
+    <th>listaalumnos</th>
+    <th>Duracion</th>
+    <th>id</th>
+    <th>Accion</th>
+    </tr>
+    </thead>
+    <tbody>";
     for($i=0;$i<count($rows);$i++){
       $aux .= "\t<tr>\n";
       foreach($rows[$i] as $campo=>$valor) {
@@ -37,7 +48,7 @@ class CursoController{
           </label>
           <div class="col-sm-10">
             <input type="text" class="form-control"
-              name="id" placeholder="identificacion" onkeypress="return valida(event)"
+              name="id" placeholder="Codigo Del Curso" onkeypress="return valida(event)"
             >
           </div>
         </div>
@@ -48,10 +59,44 @@ class CursoController{
           </label>
           <div class="col-sm-10">
             <input type="text" class="form-control"
-              name="nombre" placeholder="nombre"
+              name="nombre" placeholder="Escriba El Nombre Del Curso"
             >
           </div>
         </div>
+        
+        <div class="form-group">
+          <label class="control-label col-sm-2">
+            Instructores:
+          </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control"
+              name="listainstructores" placeholder="Elija El Instructor"
+            >
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label class="control-label col-sm-2">
+            Alumnos:
+          </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control"
+              name="listaalumnos" placeholder="Alumnos Asignados"
+            >
+          </div>
+        </div>        
+        
+        <div class="form-group">
+          <label class="control-label col-sm-2">
+            Duracion:
+          </label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control"
+              name="duracion" min="1" placeholder="Horas" onkeypress="return valida(event)"
+            >
+          </div>
+        </div>                
+        
 
         <div class="form-group">
           <div class="col-sm-10 col-sm-offset-2">
@@ -89,6 +134,39 @@ class CursoController{
             >
           </div>
         </div>
+        
+        <div class="form-group">
+          <label class="control-label col-sm-2">
+            Lista Instructores:
+          </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control"
+              name="listainstructores" placeholder="Lista De Instructores" value="' . $curso->listainstructores . '"
+            >
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label class="control-label col-sm-2">
+            Lista Alumnos:
+          </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control"
+              name="listaalumnos" placeholder="nombre" value="' . $curso->listaalumnos . '"
+            >
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label class="control-label col-sm-2">
+            Duracion:
+          </label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control"
+              name="duracion" min="1" placeholder="Horas" value="' . $curso->duracion . '" onkeypress="return valida(event)"
+            >
+          </div>
+        </div>
 
         <div class="form-group">
           <div class="col-sm-10 col-sm-offset-2">
@@ -122,7 +200,7 @@ class CursoController{
   function delete(){
     if(!empty($_GET['id'])){
       
-      $curso = new RazaModel();
+      $curso = new CursoModel();
       $curso->delete($_GET['id']);
       $this->list();
       echo $curso->msj;
@@ -140,22 +218,26 @@ class CursoController{
 
           <ul class="nav nav-pills flex-column">
             <li class="nav-item">
-              <a class="nav-link" href="?c=Mascota&a=list">Mascotas<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="?c=Prueba&a=list">Prueba <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link  active" href="?c=Raza&a=list">Razas</a>
+              <a class="nav-link" href="?c=Persona&a=list">Personas (Registro) <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="?c=Curso&a=list">Cursos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="?c=TipoMascota&a=list">Tipo mascota</a>
+              <a class="nav-link" href="?c=Instructor&a=list">Instructores</a>
             </li>
           </ul>
 
           <ul class="nav nav-pills flex-column">
             <li class="nav-item">
-              <a class="nav-link" href="?c=Accesorio&a=list">Accesorios</a>
+              <a class="nav-link" href="?c=Calificaciones&a=list">Calificaciones</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="?c=Categoria&a=list">Categorias</a>
+              <a class="nav-link" href="?c=Imprimir&a=list">Imprimir</a>
             </li>
           </ul>
 

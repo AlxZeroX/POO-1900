@@ -2,7 +2,7 @@
 require_once('model/PersonaModel.php');
 require_once('model/CursoModel.php');
 require_once('model/SucursalModel.php');
-require_once('model/TipoMascotaModel.php');
+require_once('model/TipoRolModel.php');
 
 class PersonaController{
 
@@ -12,7 +12,19 @@ class PersonaController{
 
     $aux = '';
 		$rows = $persona->getList();
-    $aux .= "</h1><h2>Mascotas</h2><a class=\"btn btn-success\" href=\"?c=Mascota&a=addform\">Agregar</a><div class=\"table-responsive\"><table class=\"table table-striped\"><thead><tr><th>id</th><th>tamaño</th><th>precio venta</th><th>color predominante</th><th>curso</th><th>tipo mascota</th><th>sucursal</th><th>Accion</th></tr></thead><tbody>";
+    $aux .= "</h1><h2>Usuario</h2><a class=\"btn btn-success\" href=\"?c=Persona&a=addform\">Agregar</a><div class=\"table-responsive\"><table class=\"table table-striped\"><thead><tr><th>id</th>
+    <th>Nombre</th>
+    <th>Apellido</th>
+    <th>Edad</th>
+    <th>Pais</th>
+    <th>Correo</th>
+    <th>Password</th>
+    <th>Username</th>
+    <th>Curso</th>
+    <th>Instructor</th>
+    <th>Tipo Usuario</th>
+    <th>Accion</th>
+    </tr></thead><tbody>";
     for($i=0;$i<count($rows);$i++){
       $aux .= "\t<tr>\n";
       foreach($rows[$i] as $campo=>$valor) {
@@ -24,18 +36,18 @@ class PersonaController{
             $curso->get($persona->curso_id);
             $aux .= "\t\t<td>". $curso->nombre . "</td>\n";
           break;
-          case 'tipo_mascota_id':
-            $tm = new TipoMascotaModel();
-            $tm->get($mascota->tipo_mascota_id);
-            $aux .= "\t\t<td>". $tm->descripcion . "</td>\n";
+          case 'tiporol_id':
+            $tm = new TipoRolModel();
+            $tm->get($persona->tiporol_id);
+            $aux .= "\t\t<td>". $tm->nombre . "</td>\n";
           break;
           case 'sucursal_id':
             $sucursal = new SucursalModel();
-            $sucursal->get($mascota->sucursal_id);
+            $sucursal->get($persona->sucursal_id);
             $aux .= "\t\t<td>". $sucursal->nombre . "</td>\n";
           break;
           default:
-            $aux .= "\t\t<td>". $mascota->$campo . "</td>\n";
+            $aux .= "\t\t<td>". $persona->$campo . "</td>\n";
           break;
         }
 
@@ -76,14 +88,14 @@ class PersonaController{
 
     $aux .= '</select></div></div>';
 
-    $tm = new TipoMascotaModel();
+    $tm = new TipoRolModel();
 
     $auxtm = '';
     $rows = $tm->getList();
     $auxtm .= '<div class="form-group">
-          <label class="control-label col-sm-2" for="sel1">Tipo Mascota:</label>
+          <label class="control-label col-sm-2" for="sel1">Tipo Rol:</label>
           <div class="col-sm-10">
-            <select class="form-control" name="tipo_mascota_id">';
+            <select class="form-control" name="tiporol_id">';
             
     for($i=0;$i<count($rows);$i++){
       foreach($rows[$i] as $campo=>$valor) {
@@ -91,7 +103,7 @@ class PersonaController{
         if($campo == 'id'){
           $auxtm .= '<option value="' . $tm->$campo . '">';
         }
-        if($campo == 'descripcion'){
+        if($campo == 'nombre'){
           $auxtm .= $tm->$campo . '</option>';
         }
 
@@ -132,11 +144,11 @@ class PersonaController{
       <form class="form-horizontal" action="?c=persona&a=add" method="post">
         <div class="form-group">
           <label class="control-label col-sm-2">
-            id:
+            ID:
           </label>
           <div class="col-sm-10">
             <input type="text" class="form-control"
-              name="id" placeholder="id" onkeypress="return valida(event)"
+              name="id" placeholder="Identificacion" onkeypress="return valida(event)"
             >
           </div>
         </div>
@@ -147,10 +159,21 @@ class PersonaController{
           </label>
           <div class="col-sm-10">
             <input type="text" class="form-control"
-              name="nombre" placeholder="nombre de la persona" onkeypress="return valida(event)"
+              name="nombre" placeholder="Ingrese Su Nombre"
             >
           </div>
         </div>
+        
+        <div class="form-group">
+          <label class="control-label col-sm-2">
+            Apellido:
+          </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control"
+              name="apellido" placeholder="Ingrese su apellido"
+            >
+          </div>
+        </div>      
 
         <div class="form-group">
           <label class="control-label col-sm-2">
@@ -158,29 +181,29 @@ class PersonaController{
           </label>
           <div class="col-sm-10">
             <input type="number" class="form-control"
-              name="edad" min="12" placeholder="edad de la persona" onkeypress="return valida(event)"
+              name="edad" min="10" placeholder="Ingrese su edad" onkeypress="return valida(event)"
             >
           </div>
         </div>
         
         <div class="form-group">
           <label class="control-label col-sm-2">
-            pais:
+            Pais:
           </label>
           <div class="col-sm-10">
             <input type="text" class="form-control"
-              name="pais" placeholder="pais de la persona"
+              name="pais" placeholder="Ingrese su pais"
             >
           </div>
         </div>
         
         <div class="form-group">
           <label class="control-label col-sm-2">
-            correo:
+            e-Mail:
           </label>
           <div class="col-sm-10">
             <input type="text" class="form-control"
-              name="correo" placeholder="correo de la persona"
+              name="correo" placeholder="Ingrese su correo"
             >
           </div>
         </div>
@@ -188,22 +211,22 @@ class PersonaController{
         
         <div class="form-group">
           <label class="control-label col-sm-2">
-            password:
+            Password:
           </label>
           <div class="col-sm-10">
             <input type="password" class="form-control"
-              name="password" placeholder="password"
+              name="password" placeholder="Ingrese su password"
             >
           </div>
         </div>
-        
+            
         <div class="form-group">
           <label class="control-label col-sm-2">
-            username:
+            Usuario:
           </label>
           <div class="col-sm-10">
             <input type="text" class="form-control"
-              name="username" placeholder="username"
+              name="username" placeholder="Ingrese su username"
             >
           </div>
         </div>        
@@ -255,27 +278,27 @@ class PersonaController{
     $auxr .= '</select></div></div>';
 
 
-    $tm = new TipoMascotaModel();
+    $tm = new TipoRolModel();
 
     $auxtm = '';
     $rows = $tm->getList();
     $auxtm .= '<div class="form-group">
-          <label class="control-label col-sm-2" for="sel1">Tipo Mascota:</label>
+          <label class="control-label col-sm-2" for="sel1">Tipo Rol:</label>
           <div class="col-sm-10">
-            <select class="form-control" name="tipo_mascota_id">';
+            <select class="form-control" name="tiporol_id">';
             
     for($i=0;$i<count($rows);$i++){
       foreach($rows[$i] as $campo=>$valor) {
         $tm->$campo = $valor;
         if($campo == 'id'){
-          if($tm->$campo == $mascota->tipo_mascota_id){
+          if($tm->$campo == $persona->tiporol_id){
              $auxtm .= '<option value="' . $tm->$campo . '" selected >';
           }
           else{
             $auxtm .= '<option value="' . $tm->$campo . '">';
           }
         }
-        if($campo == 'descripcion'){
+        if($campo == 'nombre'){
           $auxtm .= $tm->$campo . '</option>';
         }
 
@@ -299,7 +322,7 @@ class PersonaController{
       foreach($rows[$i] as $campo=>$valor) {
         $sucursal->$campo = $valor;
         if($campo == 'id'){
-          if($sucursal->$campo == $mascota->sucursal_id){
+          if($sucursal->$campo == $persona->sucursal_id){
              $auxsu .= '<option value="' . $sucursal->$campo . '" selected >';
           }
           else{
@@ -316,26 +339,37 @@ class PersonaController{
 
     $auxsu .= '</select></div></div>';
 
-    $aux = ' > Editar</h1><h2>Editar Mascota:</h2>
+    $aux = ' > Editar</h1><h2>Editar Usuario:</h2>
       <form class="form-horizontal" action="?c=Persona&a=edit" method="post">
+        <div class="form-group">
+          <label class="control-label col-sm-2">
+            id:
+          </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control"
+              name="id" placeholder="id" value="' . $persona->id . '"  readonly="readonly" onkeypress="return valida(event)"
+            >
+          </div>
+        </div>
+        
         <div class="form-group">
           <label class="control-label col-sm-2">
             Nombre:
           </label>
           <div class="col-sm-10">
             <input type="text" class="form-control"
-              name="nombre" placeholder="nombre" value="' . $persona->nombre . '"  readonly="readonly" onkeypress="return valida(event)"
+              name="nombre" placeholder="nombre" value="' . $persona->nombre . '"
             >
           </div>
         </div>
 
         <div class="form-group">
           <label class="control-label col-sm-2">
-            apellido:
+            Apellido:
           </label>
           <div class="col-sm-10">
             <input type="text" class="form-control"
-              name="apellido" placeholder="apellido de la persona" value="' . $persona->apellido . '" onkeypress="return valida(event)"
+              name="apellido" placeholder="Ingrese su apellido" value="' . $persona->apellido . '" 
             >
           </div>
         </div>
@@ -345,19 +379,19 @@ class PersonaController{
            Edad:
           </label>
           <div class="col-sm-10">
-            <input type="text" class="form-control"
-              name="edad" placeholder="edad persona" value="' . $persona->edad . '" onkeypress="return valida(event)"
+            <input type="number" class="form-control"
+              name="edad" min="10" placeholder="Ingrese su edad" value="' . $persona->edad . '" onkeypress="return valida(event)"
             >
           </div>
-        </div>
+        </div>    
 
         <div class="form-group">
           <label class="control-label col-sm-2">
-            pais:
+            Pais:
           </label>
           <div class="col-sm-10">
             <input type="text" class="form-control"
-              name="pais" placeholder="pais" value="' . $persona->pais . '"
+              name="pais" placeholder="Ingrese su pais" value="' . $persona->pais . '"
             >
           </div>
         </div>
@@ -368,7 +402,7 @@ class PersonaController{
           </label>
           <div class="col-sm-10">
             <input type="text" class="form-control"
-              name="correo" placeholder="correo persona" value="' . $persona->correo . '" onkeypress="return valida(event)"
+              name="correo" placeholder="Ingrese su correo" value="' . $persona->correo . '"
             >
           </div>
         </div>
@@ -379,30 +413,19 @@ class PersonaController{
            Password:
           </label>
           <div class="col-sm-10">
-            <input type="text" class="form-control"
-              name="password" placeholder="password persona" value="' . $persona->password . '" onkeypress="return valida(event)"
+            <input type="password" class="form-control"
+              name="password" placeholder="Ingrese su password" value="' . $persona->password . '"
             >
           </div>
         </div>
-        
+            
         <div class="form-group">
-          <label class="control-label col-sm-2">
-           Tipo Persona:
-          </label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control"
-              name="tpersona" placeholder="Tipo persona" value="' . $persona->tpersona . '" onkeypress="return valida(event)"
-            >
-          </div>
-        </div>
-        
-                <div class="form-group">
           <label class="control-label col-sm-2">
            Username:
           </label>
           <div class="col-sm-10">
             <input type="text" class="form-control"
-              name="username" placeholder="edad persona" value="' . $persona->username . '" onkeypress="return valida(event)"
+              name="username" placeholder="edad persona" value="' . $persona->username . '"
             >
           </div>
         </div>
@@ -460,28 +483,26 @@ class PersonaController{
 
           <ul class="nav nav-pills flex-column">
             <li class="nav-item">
-              <a class="nav-link active" href="?c=Mascota&a=list">Mascotas<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="?c=Mascota&a=list">Mascota <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="?c=Raza&a=list">Razas</a>
+              <a class="nav-link" href="?c=Persona&a=list">Personas (Registro) <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="?c=Curso&a=list">Cursos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="?c=TipoMascota&a=list">Tipo mascota</a>
+              <a class="nav-link" href="?c=Instructor&a=list">Instructores</a>
             </li>
           </ul>
 
           <ul class="nav nav-pills flex-column">
             <li class="nav-item">
-              <a class="nav-link" href="?c=Accesorio&a=list">Accesorios</a>
+              <a class="nav-link" href="?c=Calificaciones&a=list">Calificaciones</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="?c=Categoria&a=list">Categorias</a>
-            </li>
-          </ul>
-
-          <ul class="nav nav-pills flex-column">
-            <li class="nav-item">
-              <a class="nav-link" href="?c=E2&a=list">Consultas Entrega II</a>
+              <a class="nav-link" href="?c=Imprimir&a=list">Imprimir</a>
             </li>
           </ul>
 
@@ -489,7 +510,7 @@ class PersonaController{
        
 
         <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">       
-          <h1>Inicio > Mascotas
+          <h1>Inicio > Personas
           ';
 
 	}
