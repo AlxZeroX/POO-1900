@@ -107,7 +107,12 @@
     <table>
         <thead>
         <tr>
-            
+            <th width=250px>Nombre</th>
+            <th width=250px>Apellido</th>
+            <th width=250px>Usuario</th>
+            <th width=250px>Email</th>
+            <th width=250px>Password</th>
+            <th width=150px>Acción</th>
         </tr>
         </thead>
         <tbody id="tabla-usuarios">
