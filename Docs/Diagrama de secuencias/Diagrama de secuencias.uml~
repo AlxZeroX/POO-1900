@@ -66,7 +66,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Wed Oct 02 00:25:14 CST 2019'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Sat Oct 05 18:48:40 CST 2019'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -1492,7 +1492,17 @@
 <pgml description="org.argouml.sequence2.diagram.UMLSequenceDiagram|-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:0000000000000867"
       name="Diagrama de secuencia"
 >
-  <text name="Fig0"
+  <rectangle name="Fig0"
+    x="48"
+    y="128"
+    width="1432"
+    height="920"
+    fill="1"
+    fillcolor="white"
+    stroke="1"
+    strokecolor="black"
+  />
+  <text name="Fig1"
     x="528"
     y="16"
     width="199"
@@ -1508,8 +1518,8 @@
     textsize="18"
     justification="Center"
   >Diagrama de secuencias</text>
-  <group name="Fig1"
-       description="org.argouml.sequence2.diagram.FigClassifierRole[96, 184, 150, 815]pathVisible=false;stereotypeView=0;"
+  <group name="Fig2"
+       description="org.argouml.sequence2.diagram.FigClassifierRole[96, 184, 150, 813]pathVisible=false;stereotypeView=0;"
        href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:0000000000000868"
        fill="1"
        fillcolor="255 255 200"
@@ -1519,18 +1529,18 @@
     <private>
     </private>
     
-    <rectangle name="Fig1.0"
+    <rectangle name="Fig2.0"
       x="96"
       y="184"
       width="150"
-      height="815"
+      height="813"
       fill="0"
       fillcolor="white"
       stroke="0"
       strokecolor="black"
       visibility="0"
     />
-    <rectangle name="Fig1.1"
+    <rectangle name="Fig2.1"
       x="96"
       y="184"
       width="150"
@@ -1540,8 +1550,8 @@
       stroke="0"
       strokecolor="black"
     />
-    <group name="Fig1.2"
-         description="org.argouml.sequence2.diagram.FigLifeLine[96, 233, 150, 765]"
+    <group name="Fig2.2"
+         description="org.argouml.sequence2.diagram.FigLifeLine[96, 233, 150, 763]"
          href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:0000000000000868"
          fill="1"
          fillcolor="255 255 200"
@@ -1551,17 +1561,17 @@
       <private>
       </private>
       
-      <rectangle name="Fig1.2.0"
+      <rectangle name="Fig2.2.0"
         x="96"
         y="233"
         width="150"
-        height="765"
+        height="763"
         fill="0"
         fillcolor="255 255 200"
         stroke="0"
         strokecolor="black"
       />
-      <path name="Fig1.2.1"
+      <path name="Fig2.2.1"
         description="org.tigris.gef.presentation.FigLine"
         fill="1"
         fillcolor="255 255 200"
@@ -1571,10 +1581,10 @@
         <moveto x="171"
                 y="233" />
         <lineto x="171"
-                y="998" />
+                y="996" />
       </path>
-      <group name="Fig1.2.2"
-           description="org.argouml.sequence2.diagram.FigActivation[161, 233, 20, 765]"
+      <group name="Fig2.2.2"
+           description="org.argouml.sequence2.diagram.FigActivation[161, 233, 20, 763]"
            href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:0000000000000868"
            fill="1"
            fillcolor="255 255 200"
@@ -1584,11 +1594,11 @@
         <private>
         </private>
         
-        <rectangle name="Fig1.2.2.0"
+        <rectangle name="Fig2.2.2.0"
           x="161"
           y="233"
           width="20"
-          height="765"
+          height="763"
           fill="1"
           fillcolor="255 255 200"
           stroke="1"
@@ -1596,7 +1606,7 @@
         />
       </group>
     </group>
-    <group name="Fig1.3"
+    <group name="Fig2.3"
          description="org.argouml.sequence2.diagram.FigHead[96, 184, 150, 50]"
          href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:0000000000000868"
          fill="1"
@@ -1607,7 +1617,7 @@
       <private>
       </private>
       
-      <rectangle name="Fig1.3.0"
+      <rectangle name="Fig2.3.0"
         x="96"
         y="184"
         width="150"
@@ -1617,7 +1627,7 @@
         stroke="1"
         strokecolor="black"
       />
-      <text name="Fig1.3.1"
+      <text name="Fig2.3.1"
         x="96"
         y="184"
         width="150"
@@ -1633,7 +1643,7 @@
         textsize="12"
         justification="Center"
       >/SISTEMA</text>
-      <group name="Fig1.3.2"
+      <group name="Fig2.3.2"
            description="org.argouml.uml.diagram.ui.FigStereotypesGroup[96, 184, 150, 0]"
            href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:0000000000000868"
            fill="0"
@@ -1644,7 +1654,7 @@
         <private>
         </private>
         
-        <rectangle name="Fig1.3.2.0"
+        <rectangle name="Fig2.3.2.0"
           x="96"
           y="184"
           width="150"
@@ -1657,8 +1667,8 @@
       </group>
     </group>
   </group>
-  <group name="Fig2"
-       description="org.argouml.sequence2.diagram.FigClassifierRole[488, 184, 168, 815]pathVisible=false;stereotypeView=0;"
+  <group name="Fig3"
+       description="org.argouml.sequence2.diagram.FigClassifierRole[488, 184, 168, 813]pathVisible=false;stereotypeView=0;"
        href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:000000000000086B"
        fill="1"
        fillcolor="255 255 200"
@@ -1668,18 +1678,18 @@
     <private>
     </private>
     
-    <rectangle name="Fig2.0"
+    <rectangle name="Fig3.0"
       x="488"
       y="184"
       width="168"
-      height="815"
+      height="813"
       fill="0"
       fillcolor="white"
       stroke="0"
       strokecolor="black"
       visibility="0"
     />
-    <rectangle name="Fig2.1"
+    <rectangle name="Fig3.1"
       x="488"
       y="184"
       width="168"
@@ -1689,8 +1699,8 @@
       stroke="0"
       strokecolor="black"
     />
-    <group name="Fig2.2"
-         description="org.argouml.sequence2.diagram.FigLifeLine[488, 233, 168, 765]"
+    <group name="Fig3.2"
+         description="org.argouml.sequence2.diagram.FigLifeLine[488, 233, 168, 763]"
          href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:000000000000086B"
          fill="1"
          fillcolor="255 255 200"
@@ -1700,17 +1710,17 @@
       <private>
       </private>
       
-      <rectangle name="Fig2.2.0"
+      <rectangle name="Fig3.2.0"
         x="488"
         y="233"
         width="168"
-        height="765"
+        height="763"
         fill="0"
         fillcolor="255 255 200"
         stroke="0"
         strokecolor="black"
       />
-      <path name="Fig2.2.1"
+      <path name="Fig3.2.1"
         description="org.tigris.gef.presentation.FigLine"
         fill="1"
         fillcolor="255 255 200"
@@ -1720,10 +1730,10 @@
         <moveto x="572"
                 y="233" />
         <lineto x="572"
-                y="998" />
+                y="996" />
       </path>
-      <group name="Fig2.2.2"
-           description="org.argouml.sequence2.diagram.FigActivation[562, 233, 20, 765]"
+      <group name="Fig3.2.2"
+           description="org.argouml.sequence2.diagram.FigActivation[562, 233, 20, 763]"
            href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:000000000000086B"
            fill="1"
            fillcolor="255 255 200"
@@ -1733,11 +1743,11 @@
         <private>
         </private>
         
-        <rectangle name="Fig2.2.2.0"
+        <rectangle name="Fig3.2.2.0"
           x="562"
           y="233"
           width="20"
-          height="765"
+          height="763"
           fill="1"
           fillcolor="255 255 200"
           stroke="1"
@@ -1745,7 +1755,7 @@
         />
       </group>
     </group>
-    <group name="Fig2.3"
+    <group name="Fig3.3"
          description="org.argouml.sequence2.diagram.FigHead[488, 184, 168, 50]"
          href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:000000000000086B"
          fill="1"
@@ -1756,7 +1766,7 @@
       <private>
       </private>
       
-      <rectangle name="Fig2.3.0"
+      <rectangle name="Fig3.3.0"
         x="488"
         y="184"
         width="168"
@@ -1766,7 +1776,7 @@
         stroke="1"
         strokecolor="black"
       />
-      <text name="Fig2.3.1"
+      <text name="Fig3.3.1"
         x="488"
         y="184"
         width="168"
@@ -1782,7 +1792,7 @@
         textsize="12"
         justification="Center"
       >/ALUMNO</text>
-      <group name="Fig2.3.2"
+      <group name="Fig3.3.2"
            description="org.argouml.uml.diagram.ui.FigStereotypesGroup[488, 184, 168, 0]"
            href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:000000000000086B"
            fill="0"
@@ -1793,7 +1803,7 @@
         <private>
         </private>
         
-        <rectangle name="Fig2.3.2.0"
+        <rectangle name="Fig3.3.2.0"
           x="488"
           y="184"
           width="168"
@@ -1806,8 +1816,8 @@
       </group>
     </group>
   </group>
-  <group name="Fig3"
-       description="org.argouml.sequence2.diagram.FigClassifierRole[1288, 184, 150, 816]pathVisible=false;stereotypeView=0;"
+  <group name="Fig4"
+       description="org.argouml.sequence2.diagram.FigClassifierRole[1288, 184, 150, 814]pathVisible=false;stereotypeView=0;"
        href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:000000000000086E"
        fill="1"
        fillcolor="255 255 200"
@@ -1817,18 +1827,18 @@
     <private>
     </private>
     
-    <rectangle name="Fig3.0"
+    <rectangle name="Fig4.0"
       x="1288"
       y="184"
       width="150"
-      height="816"
+      height="814"
       fill="0"
       fillcolor="white"
       stroke="0"
       strokecolor="black"
       visibility="0"
     />
-    <rectangle name="Fig3.1"
+    <rectangle name="Fig4.1"
       x="1288"
       y="184"
       width="150"
@@ -1838,8 +1848,8 @@
       stroke="0"
       strokecolor="black"
     />
-    <group name="Fig3.2"
-         description="org.argouml.sequence2.diagram.FigLifeLine[1288, 233, 150, 766]"
+    <group name="Fig4.2"
+         description="org.argouml.sequence2.diagram.FigLifeLine[1288, 233, 150, 764]"
          href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:000000000000086E"
          fill="1"
          fillcolor="255 255 200"
@@ -1849,17 +1859,17 @@
       <private>
       </private>
       
-      <rectangle name="Fig3.2.0"
+      <rectangle name="Fig4.2.0"
         x="1288"
         y="233"
         width="150"
-        height="766"
+        height="764"
         fill="0"
         fillcolor="255 255 200"
         stroke="0"
         strokecolor="black"
       />
-      <path name="Fig3.2.1"
+      <path name="Fig4.2.1"
         description="org.tigris.gef.presentation.FigLine"
         fill="1"
         fillcolor="255 255 200"
@@ -1869,10 +1879,10 @@
         <moveto x="1363"
                 y="233" />
         <lineto x="1363"
-                y="999" />
+                y="997" />
       </path>
-      <group name="Fig3.2.2"
-           description="org.argouml.sequence2.diagram.FigActivation[1353, 233, 20, 766]"
+      <group name="Fig4.2.2"
+           description="org.argouml.sequence2.diagram.FigActivation[1353, 233, 20, 764]"
            href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:000000000000086E"
            fill="1"
            fillcolor="255 255 200"
@@ -1882,11 +1892,11 @@
         <private>
         </private>
         
-        <rectangle name="Fig3.2.2.0"
+        <rectangle name="Fig4.2.2.0"
           x="1353"
           y="233"
           width="20"
-          height="766"
+          height="764"
           fill="1"
           fillcolor="255 255 200"
           stroke="1"
@@ -1894,7 +1904,7 @@
         />
       </group>
     </group>
-    <group name="Fig3.3"
+    <group name="Fig4.3"
          description="org.argouml.sequence2.diagram.FigHead[1288, 184, 150, 50]"
          href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:000000000000086E"
          fill="1"
@@ -1905,7 +1915,7 @@
       <private>
       </private>
       
-      <rectangle name="Fig3.3.0"
+      <rectangle name="Fig4.3.0"
         x="1288"
         y="184"
         width="150"
@@ -1915,7 +1925,7 @@
         stroke="1"
         strokecolor="black"
       />
-      <text name="Fig3.3.1"
+      <text name="Fig4.3.1"
         x="1288"
         y="184"
         width="150"
@@ -1931,7 +1941,7 @@
         textsize="12"
         justification="Center"
       >/INSTRUCTOR</text>
-      <group name="Fig3.3.2"
+      <group name="Fig4.3.2"
            description="org.argouml.uml.diagram.ui.FigStereotypesGroup[1288, 184, 150, 0]"
            href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:000000000000086E"
            fill="0"
@@ -1942,7 +1952,7 @@
         <private>
         </private>
         
-        <rectangle name="Fig3.3.2.0"
+        <rectangle name="Fig4.3.2.0"
           x="1288"
           y="184"
           width="150"
@@ -1955,8 +1965,8 @@
       </group>
     </group>
   </group>
-  <group name="Fig4"
-       description="org.argouml.sequence2.diagram.FigClassifierRole[952, 184, 150, 816]pathVisible=false;stereotypeView=0;"
+  <group name="Fig5"
+       description="org.argouml.sequence2.diagram.FigClassifierRole[952, 184, 150, 814]pathVisible=false;stereotypeView=0;"
        href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:0000000000000871"
        fill="1"
        fillcolor="255 255 200"
@@ -1966,18 +1976,18 @@
     <private>
     </private>
     
-    <rectangle name="Fig4.0"
+    <rectangle name="Fig5.0"
       x="952"
       y="184"
       width="150"
-      height="816"
+      height="814"
       fill="0"
       fillcolor="white"
       stroke="0"
       strokecolor="black"
       visibility="0"
     />
-    <rectangle name="Fig4.1"
+    <rectangle name="Fig5.1"
       x="952"
       y="184"
       width="150"
@@ -1987,8 +1997,8 @@
       stroke="0"
       strokecolor="black"
     />
-    <group name="Fig4.2"
-         description="org.argouml.sequence2.diagram.FigLifeLine[952, 233, 150, 766]"
+    <group name="Fig5.2"
+         description="org.argouml.sequence2.diagram.FigLifeLine[952, 233, 150, 764]"
          href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:0000000000000871"
          fill="1"
          fillcolor="255 255 200"
@@ -1998,17 +2008,17 @@
       <private>
       </private>
       
-      <rectangle name="Fig4.2.0"
+      <rectangle name="Fig5.2.0"
         x="952"
         y="233"
         width="150"
-        height="766"
+        height="764"
         fill="0"
         fillcolor="255 255 200"
         stroke="0"
         strokecolor="black"
       />
-      <path name="Fig4.2.1"
+      <path name="Fig5.2.1"
         description="org.tigris.gef.presentation.FigLine"
         fill="1"
         fillcolor="255 255 200"
@@ -2018,10 +2028,10 @@
         <moveto x="1027"
                 y="233" />
         <lineto x="1027"
-                y="999" />
+                y="997" />
       </path>
-      <group name="Fig4.2.2"
-           description="org.argouml.sequence2.diagram.FigActivation[1017, 233, 20, 766]"
+      <group name="Fig5.2.2"
+           description="org.argouml.sequence2.diagram.FigActivation[1017, 233, 20, 764]"
            href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:0000000000000871"
            fill="1"
            fillcolor="255 255 200"
@@ -2031,11 +2041,11 @@
         <private>
         </private>
         
-        <rectangle name="Fig4.2.2.0"
+        <rectangle name="Fig5.2.2.0"
           x="1017"
           y="233"
           width="20"
-          height="766"
+          height="764"
           fill="1"
           fillcolor="255 255 200"
           stroke="1"
@@ -2043,7 +2053,7 @@
         />
       </group>
     </group>
-    <group name="Fig4.3"
+    <group name="Fig5.3"
          description="org.argouml.sequence2.diagram.FigHead[952, 184, 150, 50]"
          href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:0000000000000871"
          fill="1"
@@ -2054,7 +2064,7 @@
       <private>
       </private>
       
-      <rectangle name="Fig4.3.0"
+      <rectangle name="Fig5.3.0"
         x="952"
         y="184"
         width="150"
@@ -2064,7 +2074,7 @@
         stroke="1"
         strokecolor="black"
       />
-      <text name="Fig4.3.1"
+      <text name="Fig5.3.1"
         x="952"
         y="184"
         width="150"
@@ -2080,7 +2090,7 @@
         textsize="12"
         justification="Center"
       >/CURSO</text>
-      <group name="Fig4.3.2"
+      <group name="Fig5.3.2"
            description="org.argouml.uml.diagram.ui.FigStereotypesGroup[952, 184, 150, 0]"
            href="-64--88-1-11-4ddd486a:16d5d38f9d0:-8000:0000000000000871"
            fill="0"
@@ -2091,7 +2101,7 @@
         <private>
         </private>
         
-        <rectangle name="Fig4.3.2.0"
+        <rectangle name="Fig5.3.2.0"
           x="952"
           y="184"
           width="150"
@@ -2104,25 +2114,25 @@
       </group>
     </group>
   </group>
-  <group name="Fig5"
+  <group name="Fig6"
        description="org.argouml.sequence2.diagram.FigMessage"
        href="-64--88-1-11--f5ef8b2:16d85e0a8c5:-8000:0000000000000AAA"
        stroke="1"
        strokecolor="black"
   >
     <private>
-      sourcePortFig="Fig2.0"
-      destPortFig="Fig4.0"
-      sourceFigNode="Fig2"
-      destFigNode="Fig4"
-      <argouml:pathitem figname="Fig5.1"
+      sourcePortFig="Fig3.0"
+      destPortFig="Fig5.0"
+      sourceFigNode="Fig3"
+      destFigNode="Fig5"
+      <argouml:pathitem figname="Fig6.1"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
                         ownerhref="-64--88-1-11--f5ef8b2:16d85e0a8c5:-8000:0000000000000AAA"
                         angle="185.0"
                         offset="91" />
     </private>
-    <path name="Fig5.0"
+    <path name="Fig6.0"
       description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
@@ -2135,25 +2145,25 @@
               y="376" />
     </path>
   </group>
-  <group name="Fig6"
+  <group name="Fig7"
        description="org.argouml.sequence2.diagram.FigMessage"
        href="-64--88-1-11--f5ef8b2:16d85e0a8c5:-8000:0000000000000AB4"
        stroke="1"
        strokecolor="black"
   >
     <private>
-      sourcePortFig="Fig4.0"
-      destPortFig="Fig1.0"
-      sourceFigNode="Fig4"
-      destFigNode="Fig1"
-      <argouml:pathitem figname="Fig6.1"
+      sourcePortFig="Fig5.0"
+      destPortFig="Fig2.0"
+      sourceFigNode="Fig5"
+      destFigNode="Fig2"
+      <argouml:pathitem figname="Fig7.1"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
                         ownerhref="-64--88-1-11--f5ef8b2:16d85e0a8c5:-8000:0000000000000AB4"
                         angle="-173.0"
                         offset="85" />
     </private>
-    <path name="Fig6.0"
+    <path name="Fig7.0"
       description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
@@ -2166,25 +2176,25 @@
               y="416" />
     </path>
   </group>
-  <group name="Fig7"
+  <group name="Fig8"
        description="org.argouml.sequence2.diagram.FigMessage"
        href="-64--88-1-11--f5ef8b2:16d85e0a8c5:-8000:0000000000000ABD"
        stroke="1"
        strokecolor="black"
   >
     <private>
-      sourcePortFig="Fig1.0"
-      destPortFig="Fig3.0"
-      sourceFigNode="Fig1"
-      destFigNode="Fig3"
-      <argouml:pathitem figname="Fig7.1"
+      sourcePortFig="Fig2.0"
+      destPortFig="Fig4.0"
+      sourceFigNode="Fig2"
+      destFigNode="Fig4"
+      <argouml:pathitem figname="Fig8.1"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
                         ownerhref="-64--88-1-11--f5ef8b2:16d85e0a8c5:-8000:0000000000000ABD"
                         angle="188.0"
                         offset="84" />
     </private>
-    <path name="Fig7.0"
+    <path name="Fig8.0"
       description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
@@ -2197,54 +2207,23 @@
               y="448" />
     </path>
   </group>
-  <group name="Fig8"
+  <group name="Fig9"
        description="org.argouml.sequence2.diagram.FigMessage"
        href="-64--88-1-11--f5ef8b2:16d85e0a8c5:-8000:0000000000000AC6"
        stroke="1"
        strokecolor="black"
   >
     <private>
-      sourcePortFig="Fig2.0"
-      destPortFig="Fig1.0"
-      sourceFigNode="Fig2"
-      destFigNode="Fig1"
-      <argouml:pathitem figname="Fig8.1"
+      sourcePortFig="Fig3.0"
+      destPortFig="Fig2.0"
+      sourceFigNode="Fig3"
+      destFigNode="Fig2"
+      <argouml:pathitem figname="Fig9.1"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
                         ownerhref="-64--88-1-11--f5ef8b2:16d85e0a8c5:-8000:0000000000000AC6"
                         angle="270.0"
                         offset="10" />
-    </private>
-    <path name="Fig8.0"
-      description="org.argouml.gefext.ArgoFigPoly"
-      fill="0"
-      fillcolor="white"
-      stroke="1"
-      strokecolor="black"
-    >
-      <moveto x="562"
-              y="264" />
-      <lineto x="181"
-              y="264" />
-    </path>
-  </group>
-  <group name="Fig9"
-       description="org.argouml.sequence2.diagram.FigMessage"
-       href="-64--88-1-11--f5ef8b2:16d85e0a8c5:-8000:0000000000000AC9"
-       stroke="1"
-       strokecolor="black"
-  >
-    <private>
-      sourcePortFig="Fig1.0"
-      destPortFig="Fig2.0"
-      sourceFigNode="Fig1"
-      destFigNode="Fig2"
-      <argouml:pathitem figname="Fig9.1"
-                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
-                        figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
-                        ownerhref="-64--88-1-11--f5ef8b2:16d85e0a8c5:-8000:0000000000000AC9"
-                        angle="195.0"
-                        offset="22" />
     </private>
     <path name="Fig9.0"
       description="org.argouml.gefext.ArgoFigPoly"
@@ -2253,31 +2232,62 @@
       stroke="1"
       strokecolor="black"
     >
+      <moveto x="562"
+              y="264" />
+      <lineto x="181"
+              y="264" />
+    </path>
+  </group>
+  <group name="Fig10"
+       description="org.argouml.sequence2.diagram.FigMessage"
+       href="-64--88-1-11--f5ef8b2:16d85e0a8c5:-8000:0000000000000AC9"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig2.0"
+      destPortFig="Fig3.0"
+      sourceFigNode="Fig2"
+      destFigNode="Fig3"
+      <argouml:pathitem figname="Fig10.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
+                        ownerhref="-64--88-1-11--f5ef8b2:16d85e0a8c5:-8000:0000000000000AC9"
+                        angle="195.0"
+                        offset="22" />
+    </private>
+    <path name="Fig10.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
       <moveto x="181"
               y="296" />
       <lineto x="562"
               y="296" />
     </path>
   </group>
-  <group name="Fig10"
+  <group name="Fig11"
        description="org.argouml.sequence2.diagram.FigMessage"
        href="-64--88-1-11--f5ef8b2:16d85e0a8c5:-8000:0000000000000ACC"
        stroke="1"
        strokecolor="black"
   >
     <private>
-      sourcePortFig="Fig2.0"
-      destPortFig="Fig1.0"
-      sourceFigNode="Fig2"
-      destFigNode="Fig1"
-      <argouml:pathitem figname="Fig10.1"
+      sourcePortFig="Fig3.0"
+      destPortFig="Fig2.0"
+      sourceFigNode="Fig3"
+      destFigNode="Fig2"
+      <argouml:pathitem figname="Fig11.1"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
                         ownerhref="-64--88-1-11--f5ef8b2:16d85e0a8c5:-8000:0000000000000ACC"
                         angle="270.0"
                         offset="10" />
     </private>
-    <path name="Fig10.0"
+    <path name="Fig11.0"
       description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
@@ -2290,54 +2300,23 @@
               y="328" />
     </path>
   </group>
-  <group name="Fig11"
+  <group name="Fig12"
        description="org.argouml.sequence2.diagram.FigMessage"
        href="-64--88-1-11--f5ef8b2:16d85e0a8c5:-8000:0000000000000ACF"
        stroke="1"
        strokecolor="black"
   >
     <private>
-      sourcePortFig="Fig1.0"
-      destPortFig="Fig2.0"
-      sourceFigNode="Fig1"
-      destFigNode="Fig2"
-      <argouml:pathitem figname="Fig11.1"
+      sourcePortFig="Fig2.0"
+      destPortFig="Fig3.0"
+      sourceFigNode="Fig2"
+      destFigNode="Fig3"
+      <argouml:pathitem figname="Fig12.1"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
                         ownerhref="-64--88-1-11--f5ef8b2:16d85e0a8c5:-8000:0000000000000ACF"
                         angle="195.0"
                         offset="59" />
-    </private>
-    <path name="Fig11.0"
-      description="org.argouml.gefext.ArgoFigPoly"
-      fill="0"
-      fillcolor="white"
-      stroke="1"
-      strokecolor="black"
-    >
-      <moveto x="181"
-              y="368" />
-      <lineto x="562"
-              y="368" />
-    </path>
-  </group>
-  <group name="Fig12"
-       description="org.argouml.sequence2.diagram.FigMessage"
-       href="-64--88-1-11--f5ef8b2:16d85e0a8c5:-8000:0000000000000AD9"
-       stroke="1"
-       strokecolor="black"
-  >
-    <private>
-      sourcePortFig="Fig1.0"
-      destPortFig="Fig2.0"
-      sourceFigNode="Fig1"
-      destFigNode="Fig2"
-      <argouml:pathitem figname="Fig12.1"
-                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
-                        figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
-                        ownerhref="-64--88-1-11--f5ef8b2:16d85e0a8c5:-8000:0000000000000AD9"
-                        angle="191.0"
-                        offset="54" />
     </private>
     <path name="Fig12.0"
       description="org.argouml.gefext.ArgoFigPoly"
@@ -2347,30 +2326,61 @@
       strokecolor="black"
     >
       <moveto x="181"
+              y="368" />
+      <lineto x="562"
+              y="368" />
+    </path>
+  </group>
+  <group name="Fig13"
+       description="org.argouml.sequence2.diagram.FigMessage"
+       href="-64--88-1-11--f5ef8b2:16d85e0a8c5:-8000:0000000000000AD9"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig2.0"
+      destPortFig="Fig3.0"
+      sourceFigNode="Fig2"
+      destFigNode="Fig3"
+      <argouml:pathitem figname="Fig13.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
+                        ownerhref="-64--88-1-11--f5ef8b2:16d85e0a8c5:-8000:0000000000000AD9"
+                        angle="191.0"
+                        offset="54" />
+    </private>
+    <path name="Fig13.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="181"
               y="480" />
       <lineto x="562"
               y="480" />
     </path>
   </group>
-  <group name="Fig13"
+  <group name="Fig14"
        description="org.argouml.sequence2.diagram.FigMessage"
        href="-64--88-1-11--f5ef8b2:16d85e0a8c5:-8000:0000000000000ADB"
        stroke="1"
        strokecolor="black"
   >
     <private>
-      sourcePortFig="Fig2.0"
-      destPortFig="Fig1.0"
-      sourceFigNode="Fig2"
-      destFigNode="Fig1"
-      <argouml:pathitem figname="Fig13.1"
+      sourcePortFig="Fig3.0"
+      destPortFig="Fig2.0"
+      sourceFigNode="Fig3"
+      destFigNode="Fig2"
+      <argouml:pathitem figname="Fig14.1"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
                         ownerhref="-64--88-1-11--f5ef8b2:16d85e0a8c5:-8000:0000000000000ADB"
                         angle="270.0"
                         offset="10" />
     </private>
-    <path name="Fig13.0"
+    <path name="Fig14.0"
       description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
@@ -2383,26 +2393,26 @@
               y="504" />
     </path>
   </group>
-  <group name="Fig14"
+  <group name="Fig15"
        description="org.argouml.sequence2.diagram.FigMessage"
        href="-64--88-1-11--6db3f1e1:16d8afcc01c:-8000:0000000000000AE1"
        stroke="1"
        strokecolor="black"
   >
     <private>
-      sourcePortFig="Fig3.0"
-      destPortFig="Fig4.0"
-      sourceFigNode="Fig3"
-      destFigNode="Fig4"
-      <argouml:pathitem figname="Fig14.1"
+      sourcePortFig="Fig4.0"
+      destPortFig="Fig5.0"
+      sourceFigNode="Fig4"
+      destFigNode="Fig5"
+      <argouml:pathitem figname="Fig15.1"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
                         ownerhref="-64--88-1-11--6db3f1e1:16d8afcc01c:-8000:0000000000000AE1"
                         angle="-47.0"
                         offset="14" />
     </private>
-    <path name="Fig14.0"
-      description="org.tigris.gef.presentation.FigPoly"
+    <path name="Fig15.0"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -2414,26 +2424,26 @@
               y="544" />
     </path>
   </group>
-  <group name="Fig15"
+  <group name="Fig16"
        description="org.argouml.sequence2.diagram.FigMessage"
        href="-64--88-1-11--6db3f1e1:16d8afcc01c:-8000:0000000000000AE4"
        stroke="1"
        strokecolor="black"
   >
     <private>
-      sourcePortFig="Fig4.0"
-      destPortFig="Fig2.0"
-      sourceFigNode="Fig4"
-      destFigNode="Fig2"
-      <argouml:pathitem figname="Fig15.1"
+      sourcePortFig="Fig5.0"
+      destPortFig="Fig3.0"
+      sourceFigNode="Fig5"
+      destFigNode="Fig3"
+      <argouml:pathitem figname="Fig16.1"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
                         ownerhref="-64--88-1-11--6db3f1e1:16d8afcc01c:-8000:0000000000000AE4"
                         angle="-6.0"
                         offset="70" />
     </private>
-    <path name="Fig15.0"
-      description="org.tigris.gef.presentation.FigPoly"
+    <path name="Fig16.0"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -2445,26 +2455,26 @@
               y="544" />
     </path>
   </group>
-  <group name="Fig16"
+  <group name="Fig17"
        description="org.argouml.sequence2.diagram.FigMessage"
        href="-64--88-1-11--6db3f1e1:16d8afcc01c:-8000:0000000000000AE7"
        stroke="1"
        strokecolor="black"
   >
     <private>
-      sourcePortFig="Fig2.0"
-      destPortFig="Fig4.0"
-      sourceFigNode="Fig2"
-      destFigNode="Fig4"
-      <argouml:pathitem figname="Fig16.1"
+      sourcePortFig="Fig3.0"
+      destPortFig="Fig5.0"
+      sourceFigNode="Fig3"
+      destFigNode="Fig5"
+      <argouml:pathitem figname="Fig17.1"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
                         ownerhref="-64--88-1-11--6db3f1e1:16d8afcc01c:-8000:0000000000000AE7"
                         angle="191.0"
                         offset="72" />
     </private>
-    <path name="Fig16.0"
-      description="org.tigris.gef.presentation.FigPoly"
+    <path name="Fig17.0"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -2476,26 +2486,26 @@
               y="584" />
     </path>
   </group>
-  <group name="Fig17"
+  <group name="Fig18"
        description="org.argouml.sequence2.diagram.FigMessage"
        href="-64--88-1-11--6db3f1e1:16d8afcc01c:-8000:0000000000000AEA"
        stroke="1"
        strokecolor="black"
   >
     <private>
-      sourcePortFig="Fig3.0"
-      destPortFig="Fig1.0"
-      sourceFigNode="Fig3"
-      destFigNode="Fig1"
-      <argouml:pathitem figname="Fig17.1"
+      sourcePortFig="Fig4.0"
+      destPortFig="Fig2.0"
+      sourceFigNode="Fig4"
+      destFigNode="Fig2"
+      <argouml:pathitem figname="Fig18.1"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
                         ownerhref="-64--88-1-11--6db3f1e1:16d8afcc01c:-8000:0000000000000AEA"
                         angle="-9.0"
                         offset="48" />
     </private>
-    <path name="Fig17.0"
-      description="org.tigris.gef.presentation.FigPoly"
+    <path name="Fig18.0"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -2507,26 +2517,26 @@
               y="632" />
     </path>
   </group>
-  <group name="Fig18"
+  <group name="Fig19"
        description="org.argouml.sequence2.diagram.FigMessage"
        href="-64--88-1-11--6db3f1e1:16d8afcc01c:-8000:0000000000000AED"
        stroke="1"
        strokecolor="black"
   >
     <private>
-      sourcePortFig="Fig1.0"
-      destPortFig="Fig3.0"
-      sourceFigNode="Fig1"
-      destFigNode="Fig3"
-      <argouml:pathitem figname="Fig18.1"
+      sourcePortFig="Fig2.0"
+      destPortFig="Fig4.0"
+      sourceFigNode="Fig2"
+      destFigNode="Fig4"
+      <argouml:pathitem figname="Fig19.1"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
                         ownerhref="-64--88-1-11--6db3f1e1:16d8afcc01c:-8000:0000000000000AED"
                         angle="189.0"
                         offset="41" />
     </private>
-    <path name="Fig18.0"
-      description="org.tigris.gef.presentation.FigPoly"
+    <path name="Fig19.0"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -2538,26 +2548,26 @@
               y="664" />
     </path>
   </group>
-  <group name="Fig19"
+  <group name="Fig20"
        description="org.argouml.sequence2.diagram.FigMessage"
        href="-64--88-1-11--6db3f1e1:16d8afcc01c:-8000:0000000000000AF0"
        stroke="1"
        strokecolor="black"
   >
     <private>
-      sourcePortFig="Fig3.0"
-      destPortFig="Fig1.0"
-      sourceFigNode="Fig3"
-      destFigNode="Fig1"
-      <argouml:pathitem figname="Fig19.1"
+      sourcePortFig="Fig4.0"
+      destPortFig="Fig2.0"
+      sourceFigNode="Fig4"
+      destFigNode="Fig2"
+      <argouml:pathitem figname="Fig20.1"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
                         ownerhref="-64--88-1-11--6db3f1e1:16d8afcc01c:-8000:0000000000000AF0"
                         angle="-9.0"
                         offset="68" />
     </private>
-    <path name="Fig19.0"
-      description="org.tigris.gef.presentation.FigPoly"
+    <path name="Fig20.0"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -2569,26 +2579,26 @@
               y="696" />
     </path>
   </group>
-  <group name="Fig20"
+  <group name="Fig21"
        description="org.argouml.sequence2.diagram.FigMessage"
        href="-64--88-1-11--6db3f1e1:16d8afcc01c:-8000:0000000000000AF6"
        stroke="1"
        strokecolor="black"
   >
     <private>
-      sourcePortFig="Fig1.0"
-      destPortFig="Fig3.0"
-      sourceFigNode="Fig1"
-      destFigNode="Fig3"
-      <argouml:pathitem figname="Fig20.1"
+      sourcePortFig="Fig2.0"
+      destPortFig="Fig4.0"
+      sourceFigNode="Fig2"
+      destFigNode="Fig4"
+      <argouml:pathitem figname="Fig21.1"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
                         ownerhref="-64--88-1-11--6db3f1e1:16d8afcc01c:-8000:0000000000000AF6"
                         angle="189.0"
                         offset="41" />
     </private>
-    <path name="Fig20.0"
-      description="org.tigris.gef.presentation.FigPoly"
+    <path name="Fig21.0"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -2600,26 +2610,26 @@
               y="728" />
     </path>
   </group>
-  <group name="Fig21"
+  <group name="Fig22"
        description="org.argouml.sequence2.diagram.FigMessage"
        href="-64--88-1-11--6db3f1e1:16d8afcc01c:-8000:0000000000000AF9"
        stroke="1"
        strokecolor="black"
   >
     <private>
-      sourcePortFig="Fig3.0"
-      destPortFig="Fig1.0"
-      sourceFigNode="Fig3"
-      destFigNode="Fig1"
-      <argouml:pathitem figname="Fig21.1"
+      sourcePortFig="Fig4.0"
+      destPortFig="Fig2.0"
+      sourceFigNode="Fig4"
+      destFigNode="Fig2"
+      <argouml:pathitem figname="Fig22.1"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
                         ownerhref="-64--88-1-11--6db3f1e1:16d8afcc01c:-8000:0000000000000AF9"
                         angle="-8.0"
                         offset="66" />
     </private>
-    <path name="Fig21.0"
-      description="org.tigris.gef.presentation.FigPoly"
+    <path name="Fig22.0"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -2631,26 +2641,26 @@
               y="792" />
     </path>
   </group>
-  <group name="Fig22"
+  <group name="Fig23"
        description="org.argouml.sequence2.diagram.FigMessage"
        href="-64--88-1-11--6db3f1e1:16d8afcc01c:-8000:0000000000000AFC"
        stroke="1"
        strokecolor="black"
   >
     <private>
-      sourcePortFig="Fig2.0"
-      destPortFig="Fig1.0"
-      sourceFigNode="Fig2"
-      destFigNode="Fig1"
-      <argouml:pathitem figname="Fig22.1"
+      sourcePortFig="Fig3.0"
+      destPortFig="Fig2.0"
+      sourceFigNode="Fig3"
+      destFigNode="Fig2"
+      <argouml:pathitem figname="Fig23.1"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
                         ownerhref="-64--88-1-11--6db3f1e1:16d8afcc01c:-8000:0000000000000AFC"
                         angle="270.0"
                         offset="10" />
     </private>
-    <path name="Fig22.0"
-      description="org.tigris.gef.presentation.FigPoly"
+    <path name="Fig23.0"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
@@ -2662,26 +2672,26 @@
               y="832" />
     </path>
   </group>
-  <group name="Fig23"
+  <group name="Fig24"
        description="org.argouml.sequence2.diagram.FigMessage"
        href="-64--88-1-11--6db3f1e1:16d8afcc01c:-8000:0000000000000AFE"
        stroke="1"
        strokecolor="black"
   >
     <private>
-      sourcePortFig="Fig1.0"
-      destPortFig="Fig2.0"
-      sourceFigNode="Fig1"
-      destFigNode="Fig2"
-      <argouml:pathitem figname="Fig23.1"
+      sourcePortFig="Fig2.0"
+      destPortFig="Fig3.0"
+      sourceFigNode="Fig2"
+      destFigNode="Fig3"
+      <argouml:pathitem figname="Fig24.1"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
                         ownerhref="-64--88-1-11--6db3f1e1:16d8afcc01c:-8000:0000000000000AFE"
                         angle="270.0"
                         offset="10" />
     </private>
-    <path name="Fig23.0"
-      description="org.tigris.gef.presentation.FigPoly"
+    <path name="Fig24.0"
+      description="org.argouml.gefext.ArgoFigPoly"
       fill="0"
       fillcolor="white"
       stroke="1"
