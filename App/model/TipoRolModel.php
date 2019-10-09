@@ -3,6 +3,7 @@
 require_once('config/DBAbstractModel.php');
 class TipoRolModel extends DBAbstractModel{
 	public $nombre;
+    public $rol;
 	public $id;
 
 	# Traer datos de un tipo_rol
