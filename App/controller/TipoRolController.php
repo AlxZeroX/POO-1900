@@ -1,5 +1,5 @@
 <?php 
-require_once('model/TipoMascotaModel.php');
+require_once('model/TipoRolModel.php');
 
 
 class TipoRolController{
